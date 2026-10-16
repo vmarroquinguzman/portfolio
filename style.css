@@ -1,3 +1,10 @@
+.color-scheme {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 80%;
+  font-family: inherit;
+}
 body {
   /* Set line height to 1.5 times the font size
 	   and use the OS’s UI font as the website font
@@ -11,6 +18,7 @@ img {
   max-width: 100%;
 }
 html {
+  color-scheme: light dark;
   --color-accent: oklch(61.812% 0.17167 253.729);
   accent-color: var(--color-accent);
 }
@@ -19,6 +27,7 @@ nav {
   display: flex;
   margin-bottom: 1em;
   border-bottom: 1px solid oklch(80% 3% 200);
+  --border-color: oklch(50% 10% 200 / 40%);
 
   ul,
   li {
@@ -41,12 +50,10 @@ nav {
   a:hover {
     border-bottom: 0.4em solid var(--color-accent);
     padding-bottom: 0.1em;
-    background-color: oklch(from var(--color-accent) 95% 5% h);
+    background-color: color-mix(in oklch, var(--color-accent), canvas 85%);
   }
 }
-input,
-textarea,
-button {
+input, textarea, button, select {
   font: inherit;
 }
 form {
