@@ -231,3 +231,26 @@ h1, h2, h3, h4, h5, h6 {
     color: oklch(45% 0 0);
   }
 }
+/* GitHub Stats */
+#profile-stats dl {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.5rem;
+    margin-top: 1.5rem;
+}
+
+#profile-stats dt {
+    grid-row: 1;
+    font-family: inherit;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    color: #999;
+}
+
+#profile-stats dd {
+    grid-row: 2;
+    margin: 0;
+    font-family: inherit;
+    font-size: 2.5rem;
+    font-weight: inherit;
+}
