@@ -9,7 +9,24 @@
     <script src="projects.js" type="module"></script>
 </head>
 <body>
-       <h1 class="projects-title">Projects</h1>
+    <h1 class="projects-title">Projects</h1>
+
+    <!-- Pie chart and legend -->
+    <div class="chart-container">
+        <svg id="projects-pie-plot" viewBox="-50 -50 100 100">
+            <!-- Pie slices will be generated here -->
+        </svg>
+        <ul class="legend">
+            <!-- Legend items will be generated here -->
+        </ul>
+    </div>
+    <input
+    class="searchBar"
+    type="search"
+    aria-label="Search projects"
+    placeholder="🔍 Search projects..."
+    />
+    <!-- Projects -->
     <div class="projects"></div>
 </body>
 </html>
