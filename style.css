@@ -361,9 +361,15 @@ h1, h2, h3, h4, h5, h6 {
     opacity: 0.5;
 }
 
-/* Step 5.2: Selected pie slice */
+/* Selected pie slice */
 #projects-pie-plot path.selected {
-    fill: #ff6b6b;
+    fill: hotpink;
+}
+
+/* Selected legend item */
+.legend li.selected {
+    --color: hotpink !important;
+    font-weight: bold;
 }
 
 /* Selected legend item */
@@ -375,4 +381,21 @@ h1, h2, h3, h4, h5, h6 {
 /* Make legend items clickable */
 .legend li {
     cursor: pointer;
+}
+
+/* Step 5.1: Pie Chart Hover Effect */
+
+#projects-pie-plot path {
+    transition: opacity 300ms, fill 300ms;
+    cursor: pointer;
+}
+
+/* Fade the other slices when hovering */
+#projects-pie-plot:has(path:hover) path:not(:hover) {
+    opacity: 0.5;
+}
+
+/* Turn the hovered slice pink */
+#projects-pie-plot path:hover {
+    fill: hotpink;
 }

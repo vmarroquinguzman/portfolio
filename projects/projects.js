@@ -14,9 +14,7 @@ let query = '';
 // Create consistent colors for each year
 let years = [...new Set(projects.map(d => String(d.year)))].sort();
 
-let colors = d3.scaleOrdinal()
-  .domain(years)
-  .range(d3.quantize(d3.interpolateBlues, Math.max(3, years.length)));
+let colors = d3.scaleOrdinal(d3.schemeOranges[5]);
 
 // Function to render the pie chart
 function renderPieChart(projectsGiven) {
