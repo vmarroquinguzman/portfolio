@@ -1,3 +1,8 @@
+
+/* =========================================
+   GENERAL WEBSITE STYLING
+========================================= */
+
 .color-scheme {
   position: absolute;
   top: 1rem;
@@ -5,23 +10,41 @@
   font-size: 80%;
   font-family: inherit;
 }
+
 body {
-  /* Set line height to 1.5 times the font size
-	   and use the OS’s UI font as the website font
-	 */
   font: 100%/1.5 system-ui;
   max-width: 100ch;
   margin-inline: auto;
   padding: 1em;
 }
+
 img {
   max-width: 100%;
 }
+
 html {
   color-scheme: light dark;
   --color-accent: oklch(61.812% 0.17167 253.729);
   accent-color: var(--color-accent);
 }
+
+h1 {
+  font-size: 400%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.1;
+  text-wrap: balance;
+}
+
+input, textarea, button, select {
+  font: inherit;
+}
+
+
+/* =========================================
+   NAVIGATION
+========================================= */
 
 nav {
   display: flex;
@@ -50,12 +73,19 @@ nav {
   a:hover {
     border-bottom: 0.4em solid var(--color-accent);
     padding-bottom: 0.1em;
-    background-color: color-mix(in oklch, var(--color-accent), canvas 85%);
+    background-color: color-mix(
+      in oklch,
+      var(--color-accent),
+      canvas 85%
+    );
   }
 }
-input, textarea, button, select {
-  font: inherit;
-}
+
+
+/* =========================================
+   CONTACT FORM
+========================================= */
+
 form {
   display: grid;
   grid-template-columns: auto 1fr;
@@ -71,6 +101,12 @@ form {
     grid-column: 1 / -1;
   }
 }
+
+
+/* =========================================
+   PROJECTS PAGE
+========================================= */
+
 .projects {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
@@ -86,14 +122,27 @@ form {
     }
   }
 }
-h1 {
-  font-size: 400%;
+
+.projects .project-info p {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  line-height: 1.1;
-  text-wrap: balance;
+.projects .project-info small {
+  display: block;
+  margin-top: 1rem;
+  color: #999;
+  font-family: Baskerville, "Libre Baskerville", Georgia, serif;
+  font-style: italic;
+  font-size: 1rem;
+  font-variant-numeric: oldstyle-nums;
 }
+
+
+/* =========================================
+   RESUME PAGE
+========================================= */
+
 .resume {
   h1 {
     font-size: 250%;
@@ -159,12 +208,19 @@ h1, h2, h3, h4, h5, h6 {
   section a {
     color: var(--color-accent);
   }
+
   .course {
-  margin: 0.2em 0 0;
-  font-size: 90%;
-  color: oklch(45% 0 0);
+    margin: 0.2em 0 0;
+    font-size: 90%;
+    color: oklch(45% 0 0);
+  }
 }
-}
+
+
+/* =========================================
+   HOMEPAGE
+========================================= */
+
 .home {
   .hero {
     display: grid;
@@ -231,64 +287,59 @@ h1, h2, h3, h4, h5, h6 {
     color: oklch(45% 0 0);
   }
 }
-/* GitHub Stats */
+
+
+/* =========================================
+   GITHUB STATISTICS
+========================================= */
+
 #profile-stats dl {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 0.5rem;
-    margin-top: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5rem;
+  margin-top: 1.5rem;
 }
 
 #profile-stats dt {
-    grid-row: 1;
-    font-family: inherit;
-    font-size: 0.85rem;
-    text-transform: uppercase;
-    color: #999;
+  grid-row: 1;
+  font-family: inherit;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  color: #999;
 }
 
 #profile-stats dd {
-    grid-row: 2;
-    margin: 0;
-    font-family: inherit;
-    font-size: 2.5rem;
-    font-weight: inherit;
+  grid-row: 2;
+  margin: 0;
+  font-family: inherit;
+  font-size: 2.5rem;
+  font-weight: inherit;
 }
 
-.projects .project-info p {
-  margin-top: 0;
-  margin-bottom: 0;
-}
 
-.projects .project-info small {
-  display: block;
-  margin-top: 1rem;
-  color: #999;
-  font-family: Baskerville, "Libre Baskerville", Georgia, serif;
-  font-style: italic;
-  font-size: 1rem;
-  font-variant-numeric: oldstyle-nums;
-}
+/* =========================================
+   PREVIOUS DSC 106 LAB:
+   PIE CHART AND LEGEND
+========================================= */
 
 #projects-pie-plot {
-    max-width: 20em;
-    margin-block: 2em;
-    overflow: visible;
+  width: 20em;
+  max-width: 100%;
+  margin-block: 2em;
+  overflow: visible;
+  flex-shrink: 0;
 }
 
-/* Step 2.2: Legend Styling */
+/* Legend styling */
 
 .legend {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(9em, 1fr));
   gap: 1em;
-
   padding: 1em;
   margin: 1em 0;
-
   border: 1px solid #999;
   border-radius: 0.5em;
-
   list-style: none;
 }
 
@@ -302,105 +353,109 @@ h1, h2, h3, h4, h5, h6 {
   display: inline-block;
   width: 1em;
   height: 1em;
-
   background-color: var(--color);
   border-radius: 0.25em;
-
   flex-shrink: 0;
 }
 
-/* Step 2.3: Pie Chart and Legend Layout */
+/* Pie chart and legend layout */
 
 .chart-container {
-    display: flex;
-    align-items: center;
-    gap: 2em;
-}
-
-#projects-pie-plot {
-    width: 20em;
-    max-width: 100%;
-    flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  gap: 2em;
 }
 
 .chart-container .legend {
-    flex: 1;
-    margin: 0;
+  flex: 1;
+  margin: 0;
 }
 
-/* Step 4: Search Bar Styling */
+/* Search bar */
 
 .searchBar {
-    display: block;
-    width: 100%;
-    padding: 0.75em 1em;
-    margin: 2em 0;
-
-    font-family: inherit;
-    font-size: 1rem;
-
-    border: 1px solid #999;
-    border-radius: 0.5em;
-
-    background: canvas;
-    color: canvastext;
+  display: block;
+  width: 100%;
+  padding: 0.75em 1em;
+  margin: 2em 0;
+  font-family: inherit;
+  font-size: 1rem;
+  border: 1px solid #999;
+  border-radius: 0.5em;
+  background: canvas;
+  color: canvastext;
 }
 
 .searchBar:focus {
-    outline: 2px solid var(--color-accent);
-    outline-offset: 2px;
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
 }
 
-/* Step 5.1: Hover effect */
+/* Pie chart hover effect */
+
 #projects-pie-plot path {
-    transition: 300ms;
-    cursor: pointer;
+  transition: opacity 300ms, fill 300ms;
+  cursor: pointer;
 }
 
 #projects-pie-plot:has(path:hover) path:not(:hover) {
-    opacity: 0.5;
+  opacity: 0.5;
+}
+
+#projects-pie-plot path:hover {
+  fill: hotpink;
 }
 
 /* Selected pie slice */
+
 #projects-pie-plot path.selected {
-    fill: hotpink;
+  fill: hotpink;
 }
 
 /* Selected legend item */
+
 .legend li.selected {
-    --color: hotpink !important;
-    font-weight: bold;
+  --color: #ff6b6b !important;
+  font-weight: bold;
 }
 
-/* Selected legend item */
-.legend li.selected {
-    --color: #ff6b6b !important;
-    font-weight: bold;
-}
+/* Clickable legend items */
 
-/* Make legend items clickable */
 .legend li {
-    cursor: pointer;
+  cursor: pointer;
 }
 
-/* Step 5.1: Pie Chart Hover Effect */
 
-#projects-pie-plot path {
-    transition: opacity 300ms, fill 300ms;
-    cursor: pointer;
+/* =========================================
+   LAB 6 - STEP 1.3:
+   SUMMARY STATISTICS
+========================================= */
+
+dl.stats {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0.5em;
 }
 
-/* Fade the other slices when hovering */
-#projects-pie-plot:has(path:hover) path:not(:hover) {
-    opacity: 0.5;
+dl.stats dt {
+  grid-row: 1;
+  font-size: 0.85em;
+  color: #888;
 }
 
-/* Turn the hovered slice pink */
-#projects-pie-plot path:hover {
-    fill: hotpink;
+dl.stats dd {
+  grid-row: 2;
+  margin: 0;
+  font-size: 1.5em;
+  font-weight: bold;
 }
 
-/* Lab 6: Scatterplot gridlines */
+
+/* =========================================
+   LAB 6 - STEP 2.3:
+   SCATTERPLOT GRIDLINES
+========================================= */
+
 .gridlines line {
   stroke: currentColor;
   stroke-opacity: 0.12;
@@ -411,34 +466,125 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
+/* =========================================
+   LAB 6 - STEP 3.1:
+   DOT HOVER EFFECT
+========================================= */
 
-/* Lab 6: Commit tooltip */
-#commit-tooltip {
+#chart circle {
+  transition: 200ms;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+#chart circle:hover {
+  transform: scale(1.5);
+}
+
+
+/* =========================================
+   LAB 6 - STEP 3.1:
+   TOOLTIP INFORMATION LAYOUT
+========================================= */
+
+dl.info {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.5em 1em;
+  align-items: baseline;
+}
+
+dl.info dt {
+  font-weight: normal;
+  color: #888;
+}
+
+dl.info dd {
+  margin: 0;
+}
+
+
+/* =========================================
+   LAB 6 - STEP 3.2:
+   TOOLTIP APPEARANCE
+========================================= */
+
+.tooltip {
   position: fixed;
-  z-index: 1000;
-  background: #252525;
+  top: 1em;
+  left: 1em;
+  background-color: #252525;
   color: white;
-  padding: 1rem;
-  border: 1px solid #555;
-  border-radius: 0.5rem;
-  width: max-content;
-  max-width: 250px;
+  padding: 1em;
+  border-radius: 0.5em;
   box-shadow: 0 4px 12px rgb(0 0 0 / 25%);
+  z-index: 1000;
   pointer-events: none;
 }
+
+/* Prevent tooltip from showing when hidden */
 
 #commit-tooltip[hidden] {
   display: none;
 }
 
-#commit-tooltip dt {
-  font-weight: bold;
-}
-
-#commit-tooltip dd {
-  margin: 0 0 0.5rem;
-}
+/* Tooltip links */
 
 #commit-tooltip a {
   color: #93c5fd;
 }
+
+
+/* =========================================
+   LAB 6 - STEP 5.3:
+   POLISHED BRUSH SELECTION
+========================================= */
+
+/* Selection rectangle */
+.brush .selection {
+  fill: #669BBC;
+  fill-opacity: 0.16;
+  stroke: #78B9E5;
+  stroke-width: 1.5px;
+  stroke-opacity: 0.95;
+  rx: 3px;
+}
+
+/* Invisible area used to start brushing */
+.brush .overlay {
+  fill: transparent;
+  cursor: crosshair;
+}
+
+/* Smooth transition for the selected dots */
+#chart .dots circle {
+  transition: fill-opacity 200ms ease, stroke 200ms ease;
+}
+
+/* Lab 6: Highlight selected commits */
+#chart .dots circle.selected {
+  fill: #ff69b4;
+  stroke: #ffffff;
+  stroke-width: 1.5px;
+}
+
+
+/* Lab 6: Selected commit count */
+#selection-count {
+  margin-top: 1.5em;
+  padding: 0.8em 1em;
+  border-left: 3px solid var(--color-accent);
+  background: color-mix(in oklch, var(--color-accent), canvas 92%);
+  border-radius: 0.25em;
+  font-weight: 600;
+}
+
+/* Lab 6: Selected commit statistics */
+#selection-stats {
+  margin-top: 1.5em;
+}
+
+#selection-stats[hidden] {
+  display: none;
+}
+
