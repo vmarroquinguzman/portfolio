@@ -7,9 +7,34 @@
   <title>Code Analysis</title>
   <link rel="stylesheet" href="../style.css">
   <script type="module" src="../global.js"></script>
+  <script type="module" src="main.js"></script>
 </head>
 <body>
   <h1>Code Analysis</h1>
   <p>Exploring the development and structure of my portfolio through data visualization.</p>
+  
+  <div id="stats"></div>
+  <h2>Commits by time of day</h2>
+  <div id="chart"></div>
+  
+  <dl id="commit-tooltip" class="info tooltip" hidden>
+    <dt>Commit</dt>
+    <dd>
+      <a id="commit-link" href="" target="_blank" rel="noopener noreferrer"></a>
+    </dd>
+
+    <dt>Date</dt>
+    <dd id="commit-date"></dd>
+
+    <dt>Time</dt>
+    <dd id="commit-time"></dd>
+
+    <dt>Author</dt>
+    <dd id="commit-author"></dd>
+
+    <dt>Lines</dt>
+    <dd id="commit-lines"></dd>
+  </dl>
+
 </body>
 </html>

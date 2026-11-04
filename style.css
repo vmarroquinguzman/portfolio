@@ -399,3 +399,46 @@ h1, h2, h3, h4, h5, h6 {
 #projects-pie-plot path:hover {
     fill: hotpink;
 }
+
+/* Lab 6: Scatterplot gridlines */
+.gridlines line {
+  stroke: currentColor;
+  stroke-opacity: 0.12;
+}
+
+.gridlines .domain {
+  display: none;
+}
+
+
+
+/* Lab 6: Commit tooltip */
+#commit-tooltip {
+  position: fixed;
+  z-index: 1000;
+  background: #252525;
+  color: white;
+  padding: 1rem;
+  border: 1px solid #555;
+  border-radius: 0.5rem;
+  width: max-content;
+  max-width: 250px;
+  box-shadow: 0 4px 12px rgb(0 0 0 / 25%);
+  pointer-events: none;
+}
+
+#commit-tooltip[hidden] {
+  display: none;
+}
+
+#commit-tooltip dt {
+  font-weight: bold;
+}
+
+#commit-tooltip dd {
+  margin: 0 0 0.5rem;
+}
+
+#commit-tooltip a {
+  color: #93c5fd;
+}
