@@ -68,51 +68,31 @@ let commits = processCommits(data);
 console.log(commits);
 
 
+
 function renderCommitInfo(data, commits) {
-  const dl = d3
-    .select('#stats')
-    .append('dl')
+  const container = d3.select('#stats');
+
+  container.selectAll('*').remove();
+
+  container.append('h2')
+    .text('Summary');
+
+  const dl = container.append('dl')
     .attr('class', 'stats');
 
+  const stats = [
+    { label: 'COMMITS', value: commits.length },
+    { label: 'FILES', value: d3.group(data, d => d.file).size },
+    { label: 'TOTAL LOC', value: data.length },
+    { label: 'MAX DEPTH', value: d3.max(data, d => d.depth) },
+    { label: 'LONGEST LINE', value: d3.max(data, d => d.length) },
+    { label: 'MAX LINES', value: d3.max(commits, d => d.totalLines) },
+  ];
 
-  dl.append('dt')
-    .html('Total <abbr title="Lines of code">LOC</abbr>');
-
-
-  dl.append('dd')
-    .text(data.length);
-
-
-  dl.append('dt')
-    .text('Total commits');
-
-
-  dl.append('dd')
-    .text(commits.length);
-
-
-  dl.append('dt')
-    .text('Total files');
-
-
-  dl.append('dd')
-    .text(d3.group(data, (d) => d.file).size);
-
-
-  dl.append('dt')
-    .text('Average line length');
-
-
-  dl.append('dd')
-    .text(d3.mean(data, (d) => d.length).toFixed(2));
-
-
-  dl.append('dt')
-    .text('Maximum depth');
-
-
-  dl.append('dd')
-    .text(d3.max(data, (d) => d.depth));
+  for (const stat of stats) {
+    dl.append('dt').text(stat.label);
+    dl.append('dd').text(stat.value);
+  }
 }
 
 
