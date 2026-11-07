@@ -116,82 +116,107 @@ function updateTooltipPosition(event) {
 }
 
 
+
 function createBrushSelector(svg, usableArea, commits, xScale, yScale) {
+
+  function isCommitSelected(selection, commit) {
+    if (!selection) {
+      return false;
+    }
+
+    const [[x0, y0], [x1, y1]] = selection;
+
+    const x = xScale(commit.datetime);
+    const y = yScale(commit.hourFrac);
+
+    return x >= x0 && x <= x1 && y >= y0 && y <= y1;
+  }
+
+  // Step 5.5: Show the count of selected commits
+  function renderSelectionCount(selection) {
+    const selectedCommits = selection
+      ? commits.filter((d) => isCommitSelected(selection, d))
+      : [];
+
+    const countElement = document.querySelector('#selection-count');
+
+    countElement.textContent = `${
+      selectedCommits.length || 'No'
+    } commits selected`;
+
+    return selectedCommits;
+  }
+
+  // Step 5.6: Show language breakdown
+  function renderLanguageBreakdown(selection) {
+    const selectedCommits = selection
+      ? commits.filter((d) => isCommitSelected(selection, d))
+      : [];
+
+    const container = document.getElementById('language-breakdown');
+
+    if (selectedCommits.length === 0) {
+      container.innerHTML = '';
+      return;
+    }
+
+    const requiredCommits = selectedCommits.length
+      ? selectedCommits
+      : commits;
+
+    const lines = requiredCommits.flatMap((d) => d.lines);
+
+    // Use d3.rollup to count lines per language
+    const breakdown = d3.rollup(
+      lines,
+      (v) => v.length,
+      (d) => d.type,
+    );
+
+    // Update DOM with breakdown
+    container.innerHTML = '';
+
+    for (const [language, count] of breakdown) {
+      const proportion = count / lines.length;
+      const formatted = d3.format('.1~%')(proportion);
+
+      container.innerHTML += `
+        <dt>${language}</dt>
+        <dd>${count} lines (${formatted})</dd>
+      `;
+    }
+  }
+
+  // Step 5.4: Handle brush events
+  function brushed(event) {
+    const selection = event.selection;
+
+    svg.selectAll('.dots circle')
+      .classed('selected', (d) =>
+        isCommitSelected(selection, d)
+      );
+
+    renderSelectionCount(selection);
+    renderLanguageBreakdown(selection);
+  }
+
   const brush = d3
     .brush()
     .extent([
       [usableArea.left, usableArea.top],
       [usableArea.right, usableArea.bottom]
     ])
-    .on('start brush end', (event) => {
-      const selection = event.selection;
-
-      if (!selection) {
-      svg.selectAll('.dots circle')
-        .classed('selected', false);
-
-      document.getElementById('selection-count').textContent =
-        'No commits selected';
-
-      document.getElementById('selection-stats').hidden = true;
-
-      console.log('Selection cleared');
-      return;
-    }
-
-      const [[x0, y0], [x1, y1]] = selection;
-
-      const selectedCommits = commits.filter((commit) => {
-        const x = xScale(commit.datetime);
-        const y = yScale(commit.hourFrac);
-
-        return x >= x0 && x <= x1 && y >= y0 && y <= y1;
-      });
-
-      // Highlight the selected commits
-      const selectedIds = new Set(
-        selectedCommits.map((commit) => commit.id)
-      );
-
-      svg.selectAll('.dots circle')
-        .classed('selected', (commit) => selectedIds.has(commit.id));
-      
-      document.getElementById('selection-count').textContent =
-        `${selectedCommits.length} commit${selectedCommits.length === 1 ? '' : 's'} selected`;
-      
-      const totalSelectedLines = d3.sum(
-        selectedCommits,
-        (commit) => commit.totalLines
-      );
-
-      const averageSelectedLines = selectedCommits.length
-        ? d3.mean(selectedCommits, (commit) => commit.totalLines)
-        : 0;
-
-      document.getElementById('selection-stats').hidden = false;
-
-      document.getElementById('selected-commits').textContent =
-        selectedCommits.length;
-
-      document.getElementById('selected-lines').textContent =
-        totalSelectedLines;
-
-      document.getElementById('selected-average').textContent =
-        averageSelectedLines.toFixed(2);
-
-      console.log('Brush event:', event.type);
-      console.log('Selected commits:', selectedCommits);
-      console.log('Number of selected commits:', selectedCommits.length);
-    });
+    .on('start brush end', brushed);
 
   svg
     .append('g')
     .attr('class', 'brush')
     .call(brush);
 
-  // Keep the circles accessible for tooltips
+  // Step 5.2: Keep dots accessible for tooltips
   svg.selectAll('.dots, .overlay ~ *').raise();
 }
+
 
 function renderScatterPlot(data, commits) {
 

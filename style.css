@@ -579,12 +579,32 @@ dl.info dd {
   font-weight: 600;
 }
 
-/* Lab 6: Selected commit statistics */
-#selection-stats {
+
+/* Lab 6 Step 5.6: Language breakdown */
+#language-breakdown {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.5em 1em;
   margin-top: 1.5em;
+  text-align: center;
 }
 
-#selection-stats[hidden] {
+#language-breakdown dt {
+  grid-row: 1;
+  font-size: 1.5em;
+  color: inherit;
+  text-transform: uppercase;
+}
+
+#language-breakdown dd {
+  grid-row: 2;
+  margin: 0;
+  font-size: 1.2em;
+  font-weight: normal;
+  white-space: pre-line;
+}
+
+#language-breakdown:empty {
   display: none;
 }
 
