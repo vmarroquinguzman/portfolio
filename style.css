@@ -608,3 +608,124 @@ dl.info dd {
   display: none;
 }
 
+
+/* ==================================
+   OUR FINCAS
+================================== */
+
+.fincas {
+  background: var(--cream);
+}
+
+.fincas-heading {
+  text-align: center;
+  margin-bottom: 55px;
+}
+
+.fincas-heading > p:not(.eyebrow) {
+  max-width: 650px;
+  margin: 0 auto;
+  font-size: 17px;
+  line-height: 1.8;
+  color: var(--muted);
+}
+
+/* Three-column finca layout */
+
+.fincas-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.finca-card {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 32px 25px;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease,
+              box-shadow 0.3s ease;
+}
+
+.finca-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(52, 19, 16, 0.08);
+}
+
+.finca-number {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  color: var(--orange);
+}
+
+.finca-card h3 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 30px;
+  font-weight: 600;
+  color: var(--brown);
+  margin: 24px 0 15px;
+}
+
+.finca-card > p {
+  font-size: 15px;
+  line-height: 1.9;
+  color: var(--muted);
+  flex-grow: 1;
+}
+
+.finca-detail {
+  border-top: 1px solid var(--line);
+  padding-top: 20px;
+  margin-top: 25px;
+}
+
+.finca-detail span {
+  font-size: 11px;
+  color: var(--orange);
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}
+
+/* Farm Summary */
+
+.fincas-summary {
+  margin-top: 30px;
+  background: var(--espresso);
+  color: var(--cream);
+  padding: 40px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.fincas-summary span {
+  display: block;
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  color: #e5ba91;
+  margin-bottom: 12px;
+}
+
+.fincas-summary strong {
+  display: block;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(36px, 5vw, 55px);
+  font-weight: 600;
+}
+
+.fincas-summary p {
+  color: #e8dcd2;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+/* Mobile */
+
+@media (max-width: 950px) {
+  .fincas-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
