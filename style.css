@@ -729,3 +729,29 @@ dl.info dd {
   }
 }
 
+
+.project-link {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.6rem 1rem;
+  border: 1px solid currentColor;
+  border-radius: 8px;
+  color: inherit;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.project-link:hover {
+  background-color: color-mix(
+    in srgb,
+    currentColor 10%,
+    transparent
+  );
+}
+.projects article img {
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  object-fit: contain;
+  background: white;
+}

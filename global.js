@@ -99,6 +99,7 @@ export async function fetchJSON(url) {
     console.error('Error fetching or parsing JSON data:', error);
   }
 } 
+
 export function renderProjects(projects, containerElement, headingLevel = 'h2') {
   containerElement.innerHTML = '';
 
@@ -107,16 +108,31 @@ export function renderProjects(projects, containerElement, headingLevel = 'h2') 
 
     article.innerHTML = `
       <${headingLevel}>${project.title}</${headingLevel}>
+
       <img src="${project.image}" alt="${project.title}">
+
       <div class="project-info">
         <p>${project.description}</p>
+
         <small>c. ${project.year}</small>
+
+        ${project.repo ? `
+          <p>
+            <a href="${project.repo}"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="project-link">
+              View Project →
+            </a>
+          </p>
+        ` : ''}
       </div>
     `;
 
     containerElement.appendChild(article);
   }
 }
+
 export async function fetchGitHubData(username) {
   return fetchJSON(`https://api.github.com/users/${username}`);
 }
