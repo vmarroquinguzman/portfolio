@@ -1,4 +1,3 @@
-
 /* =========================================
    GENERAL WEBSITE STYLING
 ========================================= */
@@ -821,28 +820,54 @@ dl.info dd {
   background: var(--color);
   border-radius: 50%;
 }
+/* =========================================
+   META PAGE - IMPROVED SCROLLYTELLING
+========================================= */
+
+/* =========================================
+   LAB 8 - SCROLLYTELLING
+========================================= */
+
 #scrolly-1 {
   position: relative;
-  display: flex;
-  gap: 1rem;
-
-  > * {
-    flex: 1;
-  }
+  display: grid;
+  grid-template-columns: minmax(0, 3fr) minmax(0, 7fr);
+  gap: 1.5rem;
+  align-items: start;
+  margin-block: 2rem;
 }
 
 #scatter-story {
   position: relative;
+  min-width: 0;
 }
 
 #scatter-plot {
   position: sticky;
-  top: 0;
-  left: 0;
-  bottom: auto;
-  height: 50vh;
+  top: 1rem;
+  align-self: start;
+  min-width: 0;
 }
 
-.step {
+#chart {
+  width: 100%;
+}
+
+#chart svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+#scrolly-1 .step {
   padding-bottom: 60vh;
+  font-size: 1rem;
+  line-height: 1.5;
+  opacity: 0.5;
+  transition: opacity 300ms;
+  overflow-wrap: anywhere;
+}
+
+#scrolly-1 .step.is-active {
+  opacity: 1;
 }

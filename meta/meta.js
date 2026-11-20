@@ -642,16 +642,40 @@ d3.select('#scatter-story')
 // ==========================================
 
 function onStepEnter(response) {
+  // Highlight the active narrative
+  d3.selectAll('#scatter-story .step')
+    .classed('is-active', false);
+
+  d3.select(response.element)
+    .classed('is-active', true);
+
+  // Get the commit associated with this step
   const commit = response.element.__data__;
 
   commitMaxTime = commit.datetime;
-
   commitProgress = timeScale(commitMaxTime);
 
   document.getElementById('commit-progress').value =
     commitProgress;
 
-  onTimeSliderChange();
+  document.getElementById('commit-time').textContent =
+    commitMaxTime.toLocaleString('en-US', {
+      dateStyle: 'long',
+      timeStyle: 'short',
+    });
+
+  filteredCommits = commits.filter(
+    (d) => d.datetime <= commitMaxTime
+  );
+
+  updateScatterPlot(data, filteredCommits);
+
+  renderCommitInfo(
+    filteredCommits.flatMap((d) => d.lines),
+    filteredCommits
+  );
+
+  updateFileDisplay(filteredCommits);
 }
 
 const scroller = scrollama();
