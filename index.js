@@ -197,6 +197,10 @@ function renderRepositoryChart(commits) {
   )
   .sort((a, b) => b[1] - a[1]);
 
+  const repoColors = d3.scaleOrdinal()
+  .domain(counts.map((d) => d[0]))
+  .range(d3.schemeTableau10);
+
   if (!counts.length) {
     container.append('p')
       .text('No recorded commits in this period.');
@@ -228,6 +232,7 @@ function renderRepositoryChart(commits) {
     .attr('class', 'repository-track')
     .append('div')
     .attr('class', 'repository-bar')
+    .style('background', (d) => repoColors(d[0]))
     .style('width', '0%')
     .transition()
     .duration(500)
@@ -318,7 +323,7 @@ function renderGitHubHeatmap(commits) {
 
   const color = d3.scaleLinear()
     .domain([0, maxCount])
-    .range(['#dbeafe', '#2563eb']);
+    .range(['#dbeafe', '#256eeb']);
 
   svg.selectAll('rect')
     .data(cells)
