@@ -1,4 +1,4 @@
-
+import scrollama from 'https://cdn.jsdelivr.net/npm/scrollama@3.2.0/+esm';
 import * as d3 from 'https://cdn.jsdelivr.net/npm/d3@7/+esm';
 
 // Load data
@@ -57,7 +57,9 @@ function processCommits(data) {
     });
 }
 
-let commits = processCommits(data);
+let commits = processCommits(data).sort(
+  (a,b) => a.datetime - b.datetime
+);
 
 // ==========================================
 // LAB 8 - STEP 1.1: Creating the filtering UI
@@ -605,3 +607,62 @@ document
 onTimeSliderChange();
 
 console.log(commits);
+
+// ==========================================
+// LAB 8 - STEP 3.2: Generate commit text
+// ==========================================
+
+d3.select('#scatter-story')
+  .selectAll('.step')
+  .data(commits)
+  .join('div')
+  .attr('class', 'step')
+  .html(
+    (d, i) => `
+      On ${d.datetime.toLocaleString('en', {
+        dateStyle: 'full',
+        timeStyle: 'short',
+      })}, I made
+      <a href="${d.url}" target="_blank">
+        ${i > 0 ? 'another commit' : 'my first commit'}
+      </a>
+      to my portfolio website.
+
+      I edited ${d.totalLines} lines across ${
+        d3.rollups(
+          d.lines,
+          (D) => D.length,
+          (d) => d.file
+        ).length
+      } files.
+    `
+  );
+// ==========================================
+// LAB 8 - STEP 3.3: Scrollytelling
+// ==========================================
+
+function onStepEnter(response) {
+  const commit = response.element.__data__;
+
+  commitMaxTime = commit.datetime;
+
+  commitProgress = timeScale(commitMaxTime);
+
+  document.getElementById('commit-progress').value =
+    commitProgress;
+
+  onTimeSliderChange();
+}
+
+const scroller = scrollama();
+
+scroller
+  .setup({
+    container: '#scrolly-1',
+    step: '#scrolly-1 .step',
+  })
+  .onStepEnter(onStepEnter);
+
+window.addEventListener('resize', () => {
+  scroller.resize();
+});

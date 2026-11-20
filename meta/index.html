@@ -18,7 +18,7 @@
     through data visualization.
   </p>
 
-  <!-- Lab 8 - Filtering slider -->
+  <!-- Filtering slider -->
   <div class="filter-container">
     <label>
       Show commits until:
@@ -35,28 +35,32 @@
 
   <!-- Summary statistics -->
   <div id="stats"></div>
-  
-  <!-- Lab 8 - Step 2.1: File visualization -->
-  <dl id="files"></dl>
 
-  <!-- Scatter plot -->
-  <h2>Commits by time of day</h2>
-  <div id="chart"></div>
+  <!-- Lab 8 - Step 3: Scrollytelling -->
+  <div id="scrolly-1">
 
-  <!-- Brush selection -->
-  <p id="selection-count">No commits selected</p>
-  <dl id="language-breakdown" class="stats"></dl>
+    <!-- Left side: Commit descriptions -->
+    <div id="scatter-story"></div>
+
+    <!-- Right side: Scatter plot -->
+    <div id="scatter-plot">
+
+      <h2>Commits by time of day</h2>
+      <div id="chart"></div>
+
+      <p id="selection-count">No commits selected</p>
+      <dl id="language-breakdown" class="stats"></dl>
+
+    </div>
+
+  </div>
 
   <!-- Commit tooltip -->
   <dl id="commit-tooltip" class="info tooltip" hidden>
     <dt>Commit</dt>
     <dd>
-      <a
-        id="commit-link"
-        href=""
-        target="_blank"
-        rel="noopener noreferrer"
-      ></a>
+      <a id="commit-link" href="" target="_blank"
+         rel="noopener noreferrer"></a>
     </dd>
 
     <dt>Date</dt>
@@ -71,6 +75,9 @@
     <dt>Lines</dt>
     <dd id="commit-lines"></dd>
   </dl>
+
+  <!-- File visualization -->
+  <dl id="files"></dl>
 
 </body>
 </html>
