@@ -61,22 +61,6 @@ let commits = processCommits(data).sort(
   (a,b) => a.datetime - b.datetime
 );
 
-// ==========================================
-// LAB 8 - STEP 1.1: Creating the filtering UI
-// ==========================================
-
-let commitProgress = 100;
-
-let timeScale = d3
-  .scaleTime()
-  .domain([
-    d3.min(commits, (d) => d.datetime),
-    d3.max(commits, (d) => d.datetime),
-  ])
-  .range([0, 100]);
-
-let commitMaxTime = timeScale.invert(commitProgress);
-
 // LAB 8 - Step 1.2: Filtered commits
 let filteredCommits = commits;
 // ==========================================
@@ -132,35 +116,6 @@ let yScale;
 
 // Function for clearing the brush selection
 let clearBrushSelection = () => {};
-
-function onTimeSliderChange() {
-  commitProgress = Number(
-    document.getElementById('commit-progress').value
-  );
-
-  commitMaxTime = timeScale.invert(commitProgress);
-
-  document.getElementById('commit-time').textContent =
-    commitMaxTime.toLocaleString('en-US', {
-      dateStyle: 'long',
-      timeStyle: 'short',
-    });
-
-  // Step 1.2: Filter commits by selected time
-  filteredCommits = commits.filter(
-    (d) => d.datetime <= commitMaxTime
-  );
-
-  updateScatterPlot(data, filteredCommits);
-
-  // Update summary statistics
-  renderCommitInfo(
-    filteredCommits.flatMap((d) => d.lines),
-    filteredCommits
-  );
-  // Lab 8 - Step 2.1
-  updateFileDisplay(filteredCommits);
-}
 
 // ==========================================
 // SUMMARY STATISTICS
@@ -594,17 +549,9 @@ function updateScatterPlot(data, commits) {
 // INITIALIZE PAGE
 // ==========================================
 
-// Render the initial statistics and scatter plot
 renderCommitInfo(data, commits);
 renderScatterPlot(data, commits);
-
-// Connect slider to event listener
-document
-  .getElementById('commit-progress')
-  .addEventListener('input', onTimeSliderChange);
-
-// Initialize slider date and time
-onTimeSliderChange();
+updateFileDisplay(commits);
 
 console.log(commits);
 
@@ -649,33 +596,22 @@ function onStepEnter(response) {
   d3.select(response.element)
     .classed('is-active', true);
 
-  // Get the commit associated with this step
+  // Get the current commit
   const commit = response.element.__data__;
 
-  commitMaxTime = commit.datetime;
-  commitProgress = timeScale(commitMaxTime);
-
-  document.getElementById('commit-progress').value =
-    commitProgress;
-
-  document.getElementById('commit-time').textContent =
-    commitMaxTime.toLocaleString('en-US', {
-      dateStyle: 'long',
-      timeStyle: 'short',
-    });
-
+  // Filter commits by the current scroll position
   filteredCommits = commits.filter(
-    (d) => d.datetime <= commitMaxTime
+    (d) => d.datetime <= commit.datetime
   );
 
+  // Update the scatter plot
   updateScatterPlot(data, filteredCommits);
 
+  // Update summary statistics
   renderCommitInfo(
     filteredCommits.flatMap((d) => d.lines),
     filteredCommits
   );
-
-  updateFileDisplay(filteredCommits);
 }
 
 const scroller = scrollama();

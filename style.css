@@ -756,26 +756,6 @@ dl.info dd {
   object-fit: contain;
   background: white;
 }
-.filter-container {
-  display: flex;
-  align-items: baseline;
-  margin-block: 1em;
-}
-
-.filter-container label {
-  display: flex;
-  flex: 1;
-  align-items: baseline;
-  gap: 1em;
-}
-
-#commit-progress {
-  flex: 1;
-}
-
-#commit-time {
-  margin-left: auto;
-}
 /* =========================================
    LAB 8 - STEP 2.2:
    UNIT VISUALIZATION
