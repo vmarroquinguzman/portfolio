@@ -952,3 +952,178 @@ dl.info dd {
   border-radius: 0.25rem;
   font-size: 0.9rem;
 }
+/* =========================================
+   HOMEPAGE - GITHUB OVERVIEW
+========================================= */
+
+#github-overview {
+  margin-block: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgb(128 128 128 / 25%);
+}
+
+.github-description {
+  color: #888;
+  font-size: 0.95rem;
+}
+
+#github-overview h3 {
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+/* Dashboard filters */
+
+.github-filters {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin-block: 2rem 0.5rem;
+}
+
+.github-filters label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.github-filters select {
+  width: 100%;
+  padding: 0.65rem;
+  border: 1px solid #888;
+  border-radius: 6px;
+  background: canvas;
+  color: canvastext;
+}
+
+#github-data-status {
+  font-size: 0.8rem;
+  color: #888;
+}
+
+/* Activity cards */
+
+#github-activity-stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin-block: 1.5rem;
+}
+
+.github-stat-card {
+  padding: 1rem;
+  border: 1px solid rgb(128 128 128 / 30%);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.github-stat-card span {
+  color: #888;
+  font-size: 0.85rem;
+}
+
+.github-stat-card strong {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--color-accent);
+}
+
+.github-stat-card small {
+  color: #888;
+  font-size: 0.75rem;
+}
+
+/* Repository chart */
+
+.repository-row {
+  margin-bottom: 1rem;
+}
+
+.repository-label {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  font-size: 0.9rem;
+  margin-bottom: 0.4rem;
+}
+
+.repository-label span {
+  overflow-wrap: anywhere;
+}
+
+.repository-label strong {
+  white-space: nowrap;
+}
+
+.repository-track {
+  height: 14px;
+  border-radius: 4px;
+  background: rgb(128 128 128 / 10%);
+  overflow: hidden;
+}
+
+.repository-bar {
+  height: 100%;
+  background: var(--color-accent);
+  border-radius: 4px;
+}
+
+/* Coding heatmap */
+
+#github-heatmap {
+  width: 100%;
+  margin-top: 1.5rem;
+}
+
+#github-heatmap rect {
+  cursor: pointer;
+  transition: stroke 150ms;
+}
+
+#github-heatmap text {
+  font-family: inherit;
+  font-size: 11px;
+}
+
+#github-heatmap-legend {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  font-size: 0.8rem;
+  color: #888;
+}
+
+.github-heatmap-swatch {
+  width: 14px;
+  height: 14px;
+  border-radius: 3px;
+}
+
+#github-heatmap-info {
+  padding: 0.8rem 1rem;
+  border-left: 3px solid var(--color-accent);
+  background: color-mix(
+    in oklch,
+    var(--color-accent),
+    canvas 92%
+  );
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+/* Responsive layout */
+
+@media (max-width: 550px) {
+  .github-filters {
+    grid-template-columns: 1fr;
+  }
+
+  #github-activity-stats {
+    grid-template-columns: 1fr;
+  }
+}
