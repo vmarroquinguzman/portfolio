@@ -558,7 +558,10 @@ dl.info dd {
 
 /* Smooth transition for the selected dots */
 #chart .dots circle {
-  transition: fill-opacity 200ms ease, stroke 200ms ease;
+  transition: all 200ms;
+  @starting-style {
+  r: 0;
+}
 }
 
 /* Lab 6: Highlight selected commits */
@@ -729,7 +732,6 @@ dl.info dd {
   }
 }
 
-
 .project-link {
   display: inline-block;
   margin-top: 1rem;
@@ -754,4 +756,68 @@ dl.info dd {
   aspect-ratio: 3 / 2;
   object-fit: contain;
   background: white;
+}
+.filter-container {
+  display: flex;
+  align-items: baseline;
+  margin-block: 1em;
+}
+
+.filter-container label {
+  display: flex;
+  flex: 1;
+  align-items: baseline;
+  gap: 1em;
+}
+
+#commit-progress {
+  flex: 1;
+}
+
+#commit-time {
+  margin-left: auto;
+}
+/* =========================================
+   LAB 8 - STEP 2.2:
+   UNIT VISUALIZATION
+========================================= */
+
+#files {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+
+  > div {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: subgrid;
+  }
+
+  dt {
+    grid-column: 1;
+  }
+
+  dd {
+    grid-column: 2;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+    align-content: start;
+    gap: 0.15em;
+    padding-top: 0.6em;
+    margin-left: 0;
+  }
+
+  small {
+    display: block;
+    font-size: 0.8em;
+    opacity: 0.6;
+  }
+}
+
+.loc {
+  display: flex;
+  width: 0.5em;
+  aspect-ratio: 1;
+  background: var(--color);
+  border-radius: 50%;
 }
