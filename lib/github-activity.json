@@ -1,0 +1,1270 @@
+{
+  "updatedAt": "2026-11-20T03:21:49.051Z",
+  "profile": {
+    "repositories": 12,
+    "followers": 3,
+    "following": 3,
+    "gists": 0
+  },
+  "repositories": [
+    {
+      "name": "bikewatching",
+      "language": "JavaScript",
+      "url": "https://github.com/vmarroquinguzman/bikewatching",
+      "stars": 0
+    },
+    {
+      "name": "Cafe-Lindo-Website-",
+      "language": "CSS",
+      "url": "https://github.com/vmarroquinguzman/Cafe-Lindo-Website-",
+      "stars": 0
+    },
+    {
+      "name": "cooking-time-vs-recipe-ratings",
+      "language": "HTML",
+      "url": "https://github.com/vmarroquinguzman/cooking-time-vs-recipe-ratings",
+      "stars": 0
+    },
+    {
+      "name": "dog-shelter-outcomes-analysis",
+      "language": null,
+      "url": "https://github.com/vmarroquinguzman/dog-shelter-outcomes-analysis",
+      "stars": 0
+    },
+    {
+      "name": "dsc106-finalproject",
+      "language": "Jupyter Notebook",
+      "url": "https://github.com/vmarroquinguzman/dsc106-finalproject",
+      "stars": 0
+    },
+    {
+      "name": "dsc106-project2",
+      "language": "Jupyter Notebook",
+      "url": "https://github.com/vmarroquinguzman/dsc106-project2",
+      "stars": 0
+    },
+    {
+      "name": "dsc106-project3",
+      "language": "Jupyter Notebook",
+      "url": "https://github.com/vmarroquinguzman/dsc106-project3",
+      "stars": 0
+    },
+    {
+      "name": "GitExercise_Conflicts",
+      "language": "Jupyter Notebook",
+      "url": "https://github.com/vmarroquinguzman/GitExercise_Conflicts",
+      "stars": 0
+    },
+    {
+      "name": "portfolio",
+      "language": "JavaScript",
+      "url": "https://github.com/vmarroquinguzman/portfolio",
+      "stars": 0
+    },
+    {
+      "name": "skills-introduction-to-github",
+      "language": null,
+      "url": "https://github.com/vmarroquinguzman/skills-introduction-to-github",
+      "stars": 0
+    },
+    {
+      "name": "skills-resolve-merge-conflicts",
+      "language": null,
+      "url": "https://github.com/vmarroquinguzman/skills-resolve-merge-conflicts",
+      "stars": 0
+    },
+    {
+      "name": "skills-review-pull-requests",
+      "language": "HTML",
+      "url": "https://github.com/vmarroquinguzman/skills-review-pull-requests",
+      "stars": 0
+    }
+  ],
+  "commits": [
+    {
+      "sha": "e9ef4c30b23ec8e2e78723208e369b17095f46de",
+      "repository": "skills-introduction-to-github",
+      "date": "2026-01-16T06:17:39Z",
+      "message": "Initial commit",
+      "url": "https://github.com/vmarroquinguzman/skills-introduction-to-github/commit/e9ef4c30b23ec8e2e78723208e369b17095f46de",
+      "language": "Other"
+    },
+    {
+      "sha": "5ce50b979d805c471b1dabf0dd14548195511476",
+      "repository": "skills-introduction-to-github",
+      "date": "2026-01-16T06:29:47Z",
+      "message": "Add PROFILE.md",
+      "url": "https://github.com/vmarroquinguzman/skills-introduction-to-github/commit/5ce50b979d805c471b1dabf0dd14548195511476",
+      "language": "Other"
+    },
+    {
+      "sha": "4e0bd426ebf9ccb1f828b79c040d05327dcf56b2",
+      "repository": "skills-introduction-to-github",
+      "date": "2026-01-16T06:35:17Z",
+      "message": "Merge pull request #2 from vmarroquinguzman/my-first-branch\n\nAdd my first file",
+      "url": "https://github.com/vmarroquinguzman/skills-introduction-to-github/commit/4e0bd426ebf9ccb1f828b79c040d05327dcf56b2",
+      "language": "Other"
+    },
+    {
+      "sha": "d234bc164ceb2914229b8c3ae936047b44418491",
+      "repository": "skills-review-pull-requests",
+      "date": "2026-01-28T07:56:01Z",
+      "message": "Initial commit",
+      "url": "https://github.com/vmarroquinguzman/skills-review-pull-requests/commit/d234bc164ceb2914229b8c3ae936047b44418491",
+      "language": "HTML"
+    },
+    {
+      "sha": "e154e43491baa99a3db2d5ac42d78ed5e7660e56",
+      "repository": "skills-review-pull-requests",
+      "date": "2026-01-28T08:16:00Z",
+      "message": "Apply suggestion from @vmarroquinguzman",
+      "url": "https://github.com/vmarroquinguzman/skills-review-pull-requests/commit/e154e43491baa99a3db2d5ac42d78ed5e7660e56",
+      "language": "HTML"
+    },
+    {
+      "sha": "a06267806ccdbc8e96be81715a38ca2e9a981ab7",
+      "repository": "skills-review-pull-requests",
+      "date": "2026-01-28T08:19:43Z",
+      "message": "Merge pull request #2 from vmarroquinguzman/update-game\n\nUpdate the game over message",
+      "url": "https://github.com/vmarroquinguzman/skills-review-pull-requests/commit/a06267806ccdbc8e96be81715a38ca2e9a981ab7",
+      "language": "HTML"
+    },
+    {
+      "sha": "fde3a0a1e413c23d5e04f9fefc77d770ecc299cb",
+      "repository": "skills-resolve-merge-conflicts",
+      "date": "2026-01-28T16:50:32Z",
+      "message": "Initial commit",
+      "url": "https://github.com/vmarroquinguzman/skills-resolve-merge-conflicts/commit/fde3a0a1e413c23d5e04f9fefc77d770ecc299cb",
+      "language": "Other"
+    },
+    {
+      "sha": "385bbb5672008fc0ae1763b974bff611cbd4f4c2",
+      "repository": "skills-resolve-merge-conflicts",
+      "date": "2026-01-28T17:05:18Z",
+      "message": "Merge branch 'main' into my-resume",
+      "url": "https://github.com/vmarroquinguzman/skills-resolve-merge-conflicts/commit/385bbb5672008fc0ae1763b974bff611cbd4f4c2",
+      "language": "Other"
+    },
+    {
+      "sha": "7a6a48d7d394dc6b157b7bc255271f463076f419",
+      "repository": "skills-resolve-merge-conflicts",
+      "date": "2026-01-28T17:06:17Z",
+      "message": "Merge pull request #2 from vmarroquinguzman/my-resume\n\nResolve a merge conflict",
+      "url": "https://github.com/vmarroquinguzman/skills-resolve-merge-conflicts/commit/7a6a48d7d394dc6b157b7bc255271f463076f419",
+      "language": "Other"
+    },
+    {
+      "sha": "ed16a45b50922fa53db58732bbe41f5cf759ec92",
+      "repository": "GitExercise_Conflicts",
+      "date": "2026-01-28T20:10:02Z",
+      "message": "improved code readability",
+      "url": "https://github.com/vmarroquinguzman/GitExercise_Conflicts/commit/ed16a45b50922fa53db58732bbe41f5cf759ec92",
+      "language": "Jupyter Notebook"
+    },
+    {
+      "sha": "6422ec2860f8890c40590836a1c3f0a5ad6f7950",
+      "repository": "dog-shelter-outcomes-analysis",
+      "date": "2026-02-18T21:36:42Z",
+      "message": "Cleaned dataset and handled missingness",
+      "url": "https://github.com/vmarroquinguzman/dog-shelter-outcomes-analysis/commit/6422ec2860f8890c40590836a1c3f0a5ad6f7950",
+      "language": "Other"
+    },
+    {
+      "sha": "f84858175afa0ae03cb1e13b88676351c58158d5",
+      "repository": "dog-shelter-outcomes-analysis",
+      "date": "2026-02-18T22:08:18Z",
+      "message": "Fixed the SettingWithCopyWarning",
+      "url": "https://github.com/vmarroquinguzman/dog-shelter-outcomes-analysis/commit/f84858175afa0ae03cb1e13b88676351c58158d5",
+      "language": "Other"
+    },
+    {
+      "sha": "113ab3e5994d838615c3443ca09856910fd12599",
+      "repository": "dog-shelter-outcomes-analysis",
+      "date": "2026-03-04T18:18:04Z",
+      "message": "add RQ3 EDA",
+      "url": "https://github.com/vmarroquinguzman/dog-shelter-outcomes-analysis/commit/113ab3e5994d838615c3443ca09856910fd12599",
+      "language": "Other"
+    },
+    {
+      "sha": "0345e881d9b229a98ef0e0b6d2f1648bea93e44f",
+      "repository": "dog-shelter-outcomes-analysis",
+      "date": "2026-03-04T18:22:35Z",
+      "message": "Merge branch 'master' into edaq3",
+      "url": "https://github.com/vmarroquinguzman/dog-shelter-outcomes-analysis/commit/0345e881d9b229a98ef0e0b6d2f1648bea93e44f",
+      "language": "Other"
+    },
+    {
+      "sha": "9afa40874909e3d95ba2f8a8bb2eb9abe03bbcce",
+      "repository": "dog-shelter-outcomes-analysis",
+      "date": "2026-03-04T18:24:10Z",
+      "message": "Merge pull request #4 from COGS108/edaq3\n\nadd RQ3 EDA",
+      "url": "https://github.com/vmarroquinguzman/dog-shelter-outcomes-analysis/commit/9afa40874909e3d95ba2f8a8bb2eb9abe03bbcce",
+      "language": "Other"
+    },
+    {
+      "sha": "c93ee6a01da537e7dc91b8b0074b713a17e59f44",
+      "repository": "dog-shelter-outcomes-analysis",
+      "date": "2026-03-04T19:22:34Z",
+      "message": "restore notebook from RQ3 commit",
+      "url": "https://github.com/vmarroquinguzman/dog-shelter-outcomes-analysis/commit/c93ee6a01da537e7dc91b8b0074b713a17e59f44",
+      "language": "Other"
+    },
+    {
+      "sha": "3315314ec9a675fd50dbabc53466409007b90544",
+      "repository": "cooking-time-vs-recipe-ratings",
+      "date": "2026-03-07T07:06:16Z",
+      "message": "Create index",
+      "url": "https://github.com/vmarroquinguzman/cooking-time-vs-recipe-ratings/commit/3315314ec9a675fd50dbabc53466409007b90544",
+      "language": "HTML"
+    },
+    {
+      "sha": "bf2e83780d2252008b2de012b9934fa41bce0285",
+      "repository": "cooking-time-vs-recipe-ratings",
+      "date": "2026-03-07T07:06:48Z",
+      "message": "Rename index to index.html",
+      "url": "https://github.com/vmarroquinguzman/cooking-time-vs-recipe-ratings/commit/bf2e83780d2252008b2de012b9934fa41bce0285",
+      "language": "HTML"
+    },
+    {
+      "sha": "6f0e2fe3ff7961a556bb75c9a9dd02078499c387",
+      "repository": "cooking-time-vs-recipe-ratings",
+      "date": "2026-03-07T07:14:56Z",
+      "message": "Update index.html",
+      "url": "https://github.com/vmarroquinguzman/cooking-time-vs-recipe-ratings/commit/6f0e2fe3ff7961a556bb75c9a9dd02078499c387",
+      "language": "HTML"
+    },
+    {
+      "sha": "5b4737215ad3e3143c9e171b42a015a417dad507",
+      "repository": "dog-shelter-outcomes-analysis",
+      "date": "2026-03-18T17:03:35Z",
+      "message": "Save my work",
+      "url": "https://github.com/vmarroquinguzman/dog-shelter-outcomes-analysis/commit/5b4737215ad3e3143c9e171b42a015a417dad507",
+      "language": "Other"
+    },
+    {
+      "sha": "0d6775060bc20a9bb0d4ff1e07b7a0b8036dafa4",
+      "repository": "dog-shelter-outcomes-analysis",
+      "date": "2026-03-18T17:16:07Z",
+      "message": "Resolved merge conflict by keeping remote version",
+      "url": "https://github.com/vmarroquinguzman/dog-shelter-outcomes-analysis/commit/0d6775060bc20a9bb0d4ff1e07b7a0b8036dafa4",
+      "language": "Other"
+    },
+    {
+      "sha": "6035792fafaf81ca51bce3c47c7ef5c802f7772f",
+      "repository": "dog-shelter-outcomes-analysis",
+      "date": "2026-03-18T17:44:00Z",
+      "message": "Added all 4 dataset to final checkpoint",
+      "url": "https://github.com/vmarroquinguzman/dog-shelter-outcomes-analysis/commit/6035792fafaf81ca51bce3c47c7ef5c802f7772f",
+      "language": "Other"
+    },
+    {
+      "sha": "08affe21f11d00b086b4bd48f1b1d2be9f5a7ebb",
+      "repository": "cooking-time-vs-recipe-ratings",
+      "date": "2026-03-19T19:08:10Z",
+      "message": "Create README.md",
+      "url": "https://github.com/vmarroquinguzman/cooking-time-vs-recipe-ratings/commit/08affe21f11d00b086b4bd48f1b1d2be9f5a7ebb",
+      "language": "HTML"
+    },
+    {
+      "sha": "781e0d048ea1cefe8f68b3a26de87b75a2be0da0",
+      "repository": "cooking-time-vs-recipe-ratings",
+      "date": "2026-03-19T19:21:30Z",
+      "message": "Create _config.yml",
+      "url": "https://github.com/vmarroquinguzman/cooking-time-vs-recipe-ratings/commit/781e0d048ea1cefe8f68b3a26de87b75a2be0da0",
+      "language": "HTML"
+    },
+    {
+      "sha": "7f5487dd87e101678232c533b86c35c7e5e1bb66",
+      "repository": "cooking-time-vs-recipe-ratings",
+      "date": "2026-03-19T19:22:49Z",
+      "message": "Create index.md",
+      "url": "https://github.com/vmarroquinguzman/cooking-time-vs-recipe-ratings/commit/7f5487dd87e101678232c533b86c35c7e5e1bb66",
+      "language": "HTML"
+    },
+    {
+      "sha": "fd04ef07583f5d2e6e3eb49d35f041051286c94e",
+      "repository": "cooking-time-vs-recipe-ratings",
+      "date": "2026-03-19T19:24:05Z",
+      "message": "Delete index.html",
+      "url": "https://github.com/vmarroquinguzman/cooking-time-vs-recipe-ratings/commit/fd04ef07583f5d2e6e3eb49d35f041051286c94e",
+      "language": "HTML"
+    },
+    {
+      "sha": "885c3bfdcb59b1f228edeb5265c4e72db3e50bd8",
+      "repository": "cooking-time-vs-recipe-ratings",
+      "date": "2026-03-19T19:26:27Z",
+      "message": "Update _config.yml",
+      "url": "https://github.com/vmarroquinguzman/cooking-time-vs-recipe-ratings/commit/885c3bfdcb59b1f228edeb5265c4e72db3e50bd8",
+      "language": "HTML"
+    },
+    {
+      "sha": "25a9f82d7b59ce1a71041ba18968dbc683642e99",
+      "repository": "cooking-time-vs-recipe-ratings",
+      "date": "2026-03-19T19:28:56Z",
+      "message": "Update README.md",
+      "url": "https://github.com/vmarroquinguzman/cooking-time-vs-recipe-ratings/commit/25a9f82d7b59ce1a71041ba18968dbc683642e99",
+      "language": "HTML"
+    },
+    {
+      "sha": "ee95e03d0e68f4cf6b45f11a4fb82fec78c18c94",
+      "repository": "cooking-time-vs-recipe-ratings",
+      "date": "2026-03-19T19:31:09Z",
+      "message": "Update _config.yml",
+      "url": "https://github.com/vmarroquinguzman/cooking-time-vs-recipe-ratings/commit/ee95e03d0e68f4cf6b45f11a4fb82fec78c18c94",
+      "language": "HTML"
+    },
+    {
+      "sha": "870a4a09a57a99577b8a2acbff0bcef5b9bc5d54",
+      "repository": "cooking-time-vs-recipe-ratings",
+      "date": "2026-03-19T19:34:01Z",
+      "message": "Update index.md",
+      "url": "https://github.com/vmarroquinguzman/cooking-time-vs-recipe-ratings/commit/870a4a09a57a99577b8a2acbff0bcef5b9bc5d54",
+      "language": "HTML"
+    },
+    {
+      "sha": "349805ee45ba065201c0b512fede776bbecef37c",
+      "repository": "cooking-time-vs-recipe-ratings",
+      "date": "2026-03-19T19:54:41Z",
+      "message": "Part of the introduction index.md",
+      "url": "https://github.com/vmarroquinguzman/cooking-time-vs-recipe-ratings/commit/349805ee45ba065201c0b512fede776bbecef37c",
+      "language": "HTML"
+    },
+    {
+      "sha": "3daf5e2b08184f2d5aebf3b525bf53fa076c5bdb",
+      "repository": "cooking-time-vs-recipe-ratings",
+      "date": "2026-03-19T20:36:05Z",
+      "message": "finishing introduction index.md",
+      "url": "https://github.com/vmarroquinguzman/cooking-time-vs-recipe-ratings/commit/3daf5e2b08184f2d5aebf3b525bf53fa076c5bdb",
+      "language": "HTML"
+    },
+    {
+      "sha": "1932f7d84dd103a2a9c3b8d4c6958bc22332a1d0",
+      "repository": "cooking-time-vs-recipe-ratings",
+      "date": "2026-03-19T20:49:16Z",
+      "message": "Finished introduction index.md",
+      "url": "https://github.com/vmarroquinguzman/cooking-time-vs-recipe-ratings/commit/1932f7d84dd103a2a9c3b8d4c6958bc22332a1d0",
+      "language": "HTML"
+    },
+    {
+      "sha": "32635e4c22e12cf324f72b042ad01e8d797b9d93",
+      "repository": "cooking-time-vs-recipe-ratings",
+      "date": "2026-03-19T23:05:32Z",
+      "message": "Part 2 start index.md",
+      "url": "https://github.com/vmarroquinguzman/cooking-time-vs-recipe-ratings/commit/32635e4c22e12cf324f72b042ad01e8d797b9d93",
+      "language": "HTML"
+    },
+    {
+      "sha": "aa85523b500bd9ef9028501ba65dee1d8dbdbaa8",
+      "repository": "cooking-time-vs-recipe-ratings",
+      "date": "2026-03-19T23:12:32Z",
+      "message": "Trying Pivot index.md",
+      "url": "https://github.com/vmarroquinguzman/cooking-time-vs-recipe-ratings/commit/aa85523b500bd9ef9028501ba65dee1d8dbdbaa8",
+      "language": "HTML"
+    },
+    {
+      "sha": "34eabd3898b732214f291ce3660813833fd074ca",
+      "repository": "cooking-time-vs-recipe-ratings",
+      "date": "2026-03-19T23:14:22Z",
+      "message": "Trying pt2 index.md",
+      "url": "https://github.com/vmarroquinguzman/cooking-time-vs-recipe-ratings/commit/34eabd3898b732214f291ce3660813833fd074ca",
+      "language": "HTML"
+    },
+    {
+      "sha": "975d34b6126b98f94b3a53d38f75dea83fbc2ff5",
+      "repository": "cooking-time-vs-recipe-ratings",
+      "date": "2026-03-19T23:44:07Z",
+      "message": "finished pt index.md",
+      "url": "https://github.com/vmarroquinguzman/cooking-time-vs-recipe-ratings/commit/975d34b6126b98f94b3a53d38f75dea83fbc2ff5",
+      "language": "HTML"
+    },
+    {
+      "sha": "0b35c128d081c9fa8deafdce96a3bb1052eb6029",
+      "repository": "cooking-time-vs-recipe-ratings",
+      "date": "2026-03-20T00:27:15Z",
+      "message": "Added plots for part 2 of the website",
+      "url": "https://github.com/vmarroquinguzman/cooking-time-vs-recipe-ratings/commit/0b35c128d081c9fa8deafdce96a3bb1052eb6029",
+      "language": "HTML"
+    },
+    {
+      "sha": "dde2126eee42ec542c7300c7b4246243a41b5109",
+      "repository": "cooking-time-vs-recipe-ratings",
+      "date": "2026-03-20T00:30:38Z",
+      "message": "Added plotly index.md",
+      "url": "https://github.com/vmarroquinguzman/cooking-time-vs-recipe-ratings/commit/dde2126eee42ec542c7300c7b4246243a41b5109",
+      "language": "HTML"
+    },
+    {
+      "sha": "ede57eb65eafb56351ec294d5f4d75f450e94298",
+      "repository": "cooking-time-vs-recipe-ratings",
+      "date": "2026-03-20T00:31:31Z",
+      "message": "trying plotly again index.md",
+      "url": "https://github.com/vmarroquinguzman/cooking-time-vs-recipe-ratings/commit/ede57eb65eafb56351ec294d5f4d75f450e94298",
+      "language": "HTML"
+    },
+    {
+      "sha": "656acb9e74e076add4537324ff66c0c3eb416580",
+      "repository": "cooking-time-vs-recipe-ratings",
+      "date": "2026-03-20T01:15:47Z",
+      "message": "Step 3index.md",
+      "url": "https://github.com/vmarroquinguzman/cooking-time-vs-recipe-ratings/commit/656acb9e74e076add4537324ff66c0c3eb416580",
+      "language": "HTML"
+    },
+    {
+      "sha": "dc8210583218dc2091845762287b459229ff350d",
+      "repository": "cooking-time-vs-recipe-ratings",
+      "date": "2026-03-20T01:55:29Z",
+      "message": "Update index.md",
+      "url": "https://github.com/vmarroquinguzman/cooking-time-vs-recipe-ratings/commit/dc8210583218dc2091845762287b459229ff350d",
+      "language": "HTML"
+    },
+    {
+      "sha": "0c38ab5b13fc4e867c0eb57ec0cc65cadab79923",
+      "repository": "cooking-time-vs-recipe-ratings",
+      "date": "2026-03-20T03:24:11Z",
+      "message": "Add files via upload",
+      "url": "https://github.com/vmarroquinguzman/cooking-time-vs-recipe-ratings/commit/0c38ab5b13fc4e867c0eb57ec0cc65cadab79923",
+      "language": "HTML"
+    },
+    {
+      "sha": "af2f708e1cd555dea3055e8f6740bc802ffcad68",
+      "repository": "cooking-time-vs-recipe-ratings",
+      "date": "2026-03-20T03:24:46Z",
+      "message": "Add plotly index.md",
+      "url": "https://github.com/vmarroquinguzman/cooking-time-vs-recipe-ratings/commit/af2f708e1cd555dea3055e8f6740bc802ffcad68",
+      "language": "HTML"
+    },
+    {
+      "sha": "b8c0174dfa6acc8d4b56986ef44c9d83e7684dbe",
+      "repository": "cooking-time-vs-recipe-ratings",
+      "date": "2026-03-20T04:54:52Z",
+      "message": "Only fairness left index.md",
+      "url": "https://github.com/vmarroquinguzman/cooking-time-vs-recipe-ratings/commit/b8c0174dfa6acc8d4b56986ef44c9d83e7684dbe",
+      "language": "HTML"
+    },
+    {
+      "sha": "8278fda289560bc3339fae1d38100de057af2d4c",
+      "repository": "cooking-time-vs-recipe-ratings",
+      "date": "2026-03-20T05:10:21Z",
+      "message": "Add files via upload",
+      "url": "https://github.com/vmarroquinguzman/cooking-time-vs-recipe-ratings/commit/8278fda289560bc3339fae1d38100de057af2d4c",
+      "language": "HTML"
+    },
+    {
+      "sha": "ea9033963b12f977a7d7ab7a2d7deece5b1149f8",
+      "repository": "cooking-time-vs-recipe-ratings",
+      "date": "2026-03-20T05:16:04Z",
+      "message": "Add files via upload",
+      "url": "https://github.com/vmarroquinguzman/cooking-time-vs-recipe-ratings/commit/ea9033963b12f977a7d7ab7a2d7deece5b1149f8",
+      "language": "HTML"
+    },
+    {
+      "sha": "97e632294df349898c98e581925558380ac5b33c",
+      "repository": "cooking-time-vs-recipe-ratings",
+      "date": "2026-03-20T05:18:03Z",
+      "message": "Almost done index.md",
+      "url": "https://github.com/vmarroquinguzman/cooking-time-vs-recipe-ratings/commit/97e632294df349898c98e581925558380ac5b33c",
+      "language": "HTML"
+    },
+    {
+      "sha": "5b8aae48aa6bf9044e2af87f3faed87c3b6fa795",
+      "repository": "cooking-time-vs-recipe-ratings",
+      "date": "2026-03-20T05:23:58Z",
+      "message": "change title index.md",
+      "url": "https://github.com/vmarroquinguzman/cooking-time-vs-recipe-ratings/commit/5b8aae48aa6bf9044e2af87f3faed87c3b6fa795",
+      "language": "HTML"
+    },
+    {
+      "sha": "d5d3b653260d1fb3d1fd162da785565a91dbb029",
+      "repository": "cooking-time-vs-recipe-ratings",
+      "date": "2026-03-20T05:24:44Z",
+      "message": "Update _config.yml",
+      "url": "https://github.com/vmarroquinguzman/cooking-time-vs-recipe-ratings/commit/d5d3b653260d1fb3d1fd162da785565a91dbb029",
+      "language": "HTML"
+    },
+    {
+      "sha": "70f8161351a7cf6858270cc4596798d95d4b407b",
+      "repository": "cooking-time-vs-recipe-ratings",
+      "date": "2026-03-20T05:25:24Z",
+      "message": "Update index.md",
+      "url": "https://github.com/vmarroquinguzman/cooking-time-vs-recipe-ratings/commit/70f8161351a7cf6858270cc4596798d95d4b407b",
+      "language": "HTML"
+    },
+    {
+      "sha": "151635bea1185d1689b7a344def2be7a0b5f44cb",
+      "repository": "cooking-time-vs-recipe-ratings",
+      "date": "2026-03-20T05:26:02Z",
+      "message": "Update index.md",
+      "url": "https://github.com/vmarroquinguzman/cooking-time-vs-recipe-ratings/commit/151635bea1185d1689b7a344def2be7a0b5f44cb",
+      "language": "HTML"
+    },
+    {
+      "sha": "2ef775e438a3f8f1187f55fa8f5c5e48686d79aa",
+      "repository": "cooking-time-vs-recipe-ratings",
+      "date": "2026-03-20T05:39:43Z",
+      "message": "Final Changes index.md",
+      "url": "https://github.com/vmarroquinguzman/cooking-time-vs-recipe-ratings/commit/2ef775e438a3f8f1187f55fa8f5c5e48686d79aa",
+      "language": "HTML"
+    },
+    {
+      "sha": "580a33891f57a66de9c1f05828288ccf6798ea25",
+      "repository": "cooking-time-vs-recipe-ratings",
+      "date": "2026-03-20T06:00:33Z",
+      "message": "Update index.md",
+      "url": "https://github.com/vmarroquinguzman/cooking-time-vs-recipe-ratings/commit/580a33891f57a66de9c1f05828288ccf6798ea25",
+      "language": "HTML"
+    },
+    {
+      "sha": "0ad59c23bc5949afdd6bd8d2bd08c6a59ed5b8a7",
+      "repository": "cooking-time-vs-recipe-ratings",
+      "date": "2026-03-20T06:08:58Z",
+      "message": "add picture index.md",
+      "url": "https://github.com/vmarroquinguzman/cooking-time-vs-recipe-ratings/commit/0ad59c23bc5949afdd6bd8d2bd08c6a59ed5b8a7",
+      "language": "HTML"
+    },
+    {
+      "sha": "e6161fee9302af4b6023468e31bf11680d534f55",
+      "repository": "cooking-time-vs-recipe-ratings",
+      "date": "2026-03-20T06:14:42Z",
+      "message": "another picture index.md",
+      "url": "https://github.com/vmarroquinguzman/cooking-time-vs-recipe-ratings/commit/e6161fee9302af4b6023468e31bf11680d534f55",
+      "language": "HTML"
+    },
+    {
+      "sha": "0e634eb4c9c1b8d96e959e2ff47a5a31ed5e5a06",
+      "repository": "cooking-time-vs-recipe-ratings",
+      "date": "2026-03-20T06:16:08Z",
+      "message": "change setup index.md",
+      "url": "https://github.com/vmarroquinguzman/cooking-time-vs-recipe-ratings/commit/0e634eb4c9c1b8d96e959e2ff47a5a31ed5e5a06",
+      "language": "HTML"
+    },
+    {
+      "sha": "9b290fb91307ed999addeb0addf82ea73c9987a9",
+      "repository": "cooking-time-vs-recipe-ratings",
+      "date": "2026-03-20T06:17:32Z",
+      "message": "Update _config.yml",
+      "url": "https://github.com/vmarroquinguzman/cooking-time-vs-recipe-ratings/commit/9b290fb91307ed999addeb0addf82ea73c9987a9",
+      "language": "HTML"
+    },
+    {
+      "sha": "29b687bb76770cecf72303b999210e0a854d22cf",
+      "repository": "cooking-time-vs-recipe-ratings",
+      "date": "2026-03-20T06:25:44Z",
+      "message": "final change index.md",
+      "url": "https://github.com/vmarroquinguzman/cooking-time-vs-recipe-ratings/commit/29b687bb76770cecf72303b999210e0a854d22cf",
+      "language": "HTML"
+    },
+    {
+      "sha": "0ddb5ab58ab3354d46c34af5a60773dfffd7f718",
+      "repository": "portfolio",
+      "date": "2026-09-30T19:48:32Z",
+      "message": "Initial commit",
+      "url": "https://github.com/vmarroquinguzman/portfolio/commit/0ddb5ab58ab3354d46c34af5a60773dfffd7f718",
+      "language": "JavaScript"
+    },
+    {
+      "sha": "5787bd036426426a55fa4d8665aee9d9ea652b4a",
+      "repository": "portfolio",
+      "date": "2026-09-30T20:14:18Z",
+      "message": "Create index.html\n\nI added my name to my website",
+      "url": "https://github.com/vmarroquinguzman/portfolio/commit/5787bd036426426a55fa4d8665aee9d9ea652b4a",
+      "language": "JavaScript"
+    },
+    {
+      "sha": "5033da7dfae4268f183d12d66559b3d4999771db",
+      "repository": "portfolio",
+      "date": "2026-10-01T03:50:26Z",
+      "message": "made more updates to the website\n\nAdded a picture of my dog and added links to contact, projects, resume and my own github page",
+      "url": "https://github.com/vmarroquinguzman/portfolio/commit/5033da7dfae4268f183d12d66559b3d4999771db",
+      "language": "JavaScript"
+    },
+    {
+      "sha": "38dafdb068f3d8ef30540a45fbfb7ab0a9c4689b",
+      "repository": "portfolio",
+      "date": "2026-10-02T19:41:21Z",
+      "message": "Added some work experience",
+      "url": "https://github.com/vmarroquinguzman/portfolio/commit/38dafdb068f3d8ef30540a45fbfb7ab0a9c4689b",
+      "language": "JavaScript"
+    },
+    {
+      "sha": "73f28e4105e380a02427a9ab50bff21360573002",
+      "repository": "portfolio",
+      "date": "2026-10-09T20:53:18Z",
+      "message": "Style Edits\n\nMade some stylistic changes to my website",
+      "url": "https://github.com/vmarroquinguzman/portfolio/commit/73f28e4105e380a02427a9ab50bff21360573002",
+      "language": "JavaScript"
+    },
+    {
+      "sha": "19ce36ca78e035722cc6b3ae8be437517524803f",
+      "repository": "portfolio",
+      "date": "2026-10-09T21:00:21Z",
+      "message": "Resume Change",
+      "url": "https://github.com/vmarroquinguzman/portfolio/commit/19ce36ca78e035722cc6b3ae8be437517524803f",
+      "language": "JavaScript"
+    },
+    {
+      "sha": "6023cefdae51cf3e5380c579b14ae305d5aa1a97",
+      "repository": "portfolio",
+      "date": "2026-10-10T03:22:00Z",
+      "message": "Updated my Resume",
+      "url": "https://github.com/vmarroquinguzman/portfolio/commit/6023cefdae51cf3e5380c579b14ae305d5aa1a97",
+      "language": "JavaScript"
+    },
+    {
+      "sha": "5f48176b39adf0234a81d7251f5aa2f9437295e0",
+      "repository": "portfolio",
+      "date": "2026-10-16T02:28:56Z",
+      "message": "Made changes to dark mode",
+      "url": "https://github.com/vmarroquinguzman/portfolio/commit/5f48176b39adf0234a81d7251f5aa2f9437295e0",
+      "language": "JavaScript"
+    },
+    {
+      "sha": "641ec823e95a5eabc9b178817cdd0f743a970783",
+      "repository": "portfolio",
+      "date": "2026-10-16T02:45:07Z",
+      "message": "Put theme on home page",
+      "url": "https://github.com/vmarroquinguzman/portfolio/commit/641ec823e95a5eabc9b178817cdd0f743a970783",
+      "language": "JavaScript"
+    },
+    {
+      "sha": "202affa560ed4d9fd4ac4ca72df2ef9853f2eb35",
+      "repository": "dsc106-project2",
+      "date": "2026-10-19T21:35:19Z",
+      "message": "Jupyter Noyebook for visualizations",
+      "url": "https://github.com/vmarroquinguzman/dsc106-project2/commit/202affa560ed4d9fd4ac4ca72df2ef9853f2eb35",
+      "language": "Jupyter Notebook"
+    },
+    {
+      "sha": "72930272bf76215825d4fbb1684727ff94a15794",
+      "repository": "dsc106-project2",
+      "date": "2026-10-19T21:42:24Z",
+      "message": "Added code for visualization",
+      "url": "https://github.com/vmarroquinguzman/dsc106-project2/commit/72930272bf76215825d4fbb1684727ff94a15794",
+      "language": "Jupyter Notebook"
+    },
+    {
+      "sha": "ac824143103e16df1c5bb8bfd83f286eb34be9db",
+      "repository": "dsc106-project2",
+      "date": "2026-10-19T21:47:49Z",
+      "message": "Merge branch 'koberhauser:main' into main",
+      "url": "https://github.com/vmarroquinguzman/dsc106-project2/commit/ac824143103e16df1c5bb8bfd83f286eb34be9db",
+      "language": "Jupyter Notebook"
+    },
+    {
+      "sha": "f1a050e5c042a7969ff87984a4190f80033ee8d5",
+      "repository": "dsc106-project2",
+      "date": "2026-10-19T23:12:18Z",
+      "message": "Created changes to the visualizations",
+      "url": "https://github.com/vmarroquinguzman/dsc106-project2/commit/f1a050e5c042a7969ff87984a4190f80033ee8d5",
+      "language": "Jupyter Notebook"
+    },
+    {
+      "sha": "937c95648e295bd64df7064705e92022e0d411d8",
+      "repository": "dsc106-project2",
+      "date": "2026-10-19T23:13:13Z",
+      "message": "Merge branch 'koberhauser:main' into main",
+      "url": "https://github.com/vmarroquinguzman/dsc106-project2/commit/937c95648e295bd64df7064705e92022e0d411d8",
+      "language": "Jupyter Notebook"
+    },
+    {
+      "sha": "d9f4a41420fc40e195c5b549c241ba2a775e11da",
+      "repository": "dsc106-project2",
+      "date": "2026-10-20T21:54:45Z",
+      "message": "Refined Visualizations",
+      "url": "https://github.com/vmarroquinguzman/dsc106-project2/commit/d9f4a41420fc40e195c5b549c241ba2a775e11da",
+      "language": "Jupyter Notebook"
+    },
+    {
+      "sha": "bdbf028700a181470aeef4d0004bb2cc3b4805fa",
+      "repository": "dsc106-project2",
+      "date": "2026-10-20T22:01:52Z",
+      "message": "Added the new visualizations to the images file",
+      "url": "https://github.com/vmarroquinguzman/dsc106-project2/commit/bdbf028700a181470aeef4d0004bb2cc3b4805fa",
+      "language": "Jupyter Notebook"
+    },
+    {
+      "sha": "1efca49366bfde655dc0527ec3630c580fa468b2",
+      "repository": "dsc106-project2",
+      "date": "2026-10-20T22:06:13Z",
+      "message": "Update index.html\n\nChanged the old visualizations to the new ones.",
+      "url": "https://github.com/vmarroquinguzman/dsc106-project2/commit/1efca49366bfde655dc0527ec3630c580fa468b2",
+      "language": "Jupyter Notebook"
+    },
+    {
+      "sha": "858f1d3ccee1539f02a0bd95bcc5d1b1123ca9e7",
+      "repository": "dsc106-project2",
+      "date": "2026-10-20T22:07:34Z",
+      "message": "Merge branch 'koberhauser:main' into main",
+      "url": "https://github.com/vmarroquinguzman/dsc106-project2/commit/858f1d3ccee1539f02a0bd95bcc5d1b1123ca9e7",
+      "language": "Jupyter Notebook"
+    },
+    {
+      "sha": "8c3eb9285c669426b2284ab27f4bbcdd33503821",
+      "repository": "dsc106-project2",
+      "date": "2026-10-20T22:18:15Z",
+      "message": "Update index.html\n\nChanged the size of the visuals",
+      "url": "https://github.com/vmarroquinguzman/dsc106-project2/commit/8c3eb9285c669426b2284ab27f4bbcdd33503821",
+      "language": "Jupyter Notebook"
+    },
+    {
+      "sha": "fddb6d88aa67f9b1f197067ce8dd337e182e3d9b",
+      "repository": "dsc106-project2",
+      "date": "2026-10-20T22:18:32Z",
+      "message": "Merge branch 'koberhauser:main' into main",
+      "url": "https://github.com/vmarroquinguzman/dsc106-project2/commit/fddb6d88aa67f9b1f197067ce8dd337e182e3d9b",
+      "language": "Jupyter Notebook"
+    },
+    {
+      "sha": "f1a9b046dc6581a27f7e2327fd4d6d21849abb5a",
+      "repository": "dsc106-project2",
+      "date": "2026-10-20T22:28:54Z",
+      "message": "Update index.html\n\nAdded our names new proposition and figure description to the website.",
+      "url": "https://github.com/vmarroquinguzman/dsc106-project2/commit/f1a9b046dc6581a27f7e2327fd4d6d21849abb5a",
+      "language": "Jupyter Notebook"
+    },
+    {
+      "sha": "91930dc0d9054f6161bfba482d6d99ab95b0e199",
+      "repository": "dsc106-project2",
+      "date": "2026-10-20T22:29:14Z",
+      "message": "Merge branch 'koberhauser:main' into main",
+      "url": "https://github.com/vmarroquinguzman/dsc106-project2/commit/91930dc0d9054f6161bfba482d6d99ab95b0e199",
+      "language": "Jupyter Notebook"
+    },
+    {
+      "sha": "9ab46764b82184d8b5bb229362ca2fc01ad5e9b4",
+      "repository": "dsc106-project2",
+      "date": "2026-10-21T21:19:35Z",
+      "message": "Merge branch 'koberhauser:main' into main",
+      "url": "https://github.com/vmarroquinguzman/dsc106-project2/commit/9ab46764b82184d8b5bb229362ca2fc01ad5e9b4",
+      "language": "Jupyter Notebook"
+    },
+    {
+      "sha": "85ff6b2866336db17d2ac89ff0b7409bf8e1fe43",
+      "repository": "dsc106-project2",
+      "date": "2026-10-21T21:46:50Z",
+      "message": "Merge branch 'koberhauser:main' into main",
+      "url": "https://github.com/vmarroquinguzman/dsc106-project2/commit/85ff6b2866336db17d2ac89ff0b7409bf8e1fe43",
+      "language": "Jupyter Notebook"
+    },
+    {
+      "sha": "c7e21145a9a78286f9489906664ca38f13dbc613",
+      "repository": "portfolio",
+      "date": "2026-10-23T21:31:54Z",
+      "message": "Updated my Website\n\nAdded latest projects and my github status along with adding JSON file",
+      "url": "https://github.com/vmarroquinguzman/portfolio/commit/c7e21145a9a78286f9489906664ca38f13dbc613",
+      "language": "JavaScript"
+    },
+    {
+      "sha": "e4eed23ba86edaad1987e7b4bd0c79efb5c5d920",
+      "repository": "dsc106-project2",
+      "date": "2026-10-24T04:09:43Z",
+      "message": "Merge branch 'koberhauser:main' into main",
+      "url": "https://github.com/vmarroquinguzman/dsc106-project2/commit/e4eed23ba86edaad1987e7b4bd0c79efb5c5d920",
+      "language": "Jupyter Notebook"
+    },
+    {
+      "sha": "aef69df133e6c967a309828ba90e25fcc8ba4e09",
+      "repository": "portfolio",
+      "date": "2026-10-24T04:22:35Z",
+      "message": "Added the Year to each Project",
+      "url": "https://github.com/vmarroquinguzman/portfolio/commit/aef69df133e6c967a309828ba90e25fcc8ba4e09",
+      "language": "JavaScript"
+    },
+    {
+      "sha": "8e44920e6d903da3206041e2b96d59de13efb738",
+      "repository": "portfolio",
+      "date": "2026-10-30T23:48:08Z",
+      "message": "Added pie chart to my portfolio.",
+      "url": "https://github.com/vmarroquinguzman/portfolio/commit/8e44920e6d903da3206041e2b96d59de13efb738",
+      "language": "JavaScript"
+    },
+    {
+      "sha": "31ec01f512cf44f76c8f4b9ed4c1a80d9a8ff2e7",
+      "repository": "portfolio",
+      "date": "2026-10-31T05:33:57Z",
+      "message": "Changed the color of pie chart",
+      "url": "https://github.com/vmarroquinguzman/portfolio/commit/31ec01f512cf44f76c8f4b9ed4c1a80d9a8ff2e7",
+      "language": "JavaScript"
+    },
+    {
+      "sha": "c1eb1180d179086c31aa324161be909b8d951de3",
+      "repository": "dsc106-project3",
+      "date": "2026-11-02T17:20:24Z",
+      "message": "Added files",
+      "url": "https://github.com/vmarroquinguzman/dsc106-project3/commit/c1eb1180d179086c31aa324161be909b8d951de3",
+      "language": "Jupyter Notebook"
+    },
+    {
+      "sha": "a930750e0be98fb7e2051629e9069efebacff144",
+      "repository": "dsc106-project3",
+      "date": "2026-11-02T17:30:59Z",
+      "message": "Create Jupyter Notebook",
+      "url": "https://github.com/vmarroquinguzman/dsc106-project3/commit/a930750e0be98fb7e2051629e9069efebacff144",
+      "language": "Jupyter Notebook"
+    },
+    {
+      "sha": "b9d14f4ebd98b9d2b451db477b98dc688b5c546c",
+      "repository": "dsc106-project3",
+      "date": "2026-11-02T18:01:32Z",
+      "message": "Exploratory vis",
+      "url": "https://github.com/vmarroquinguzman/dsc106-project3/commit/b9d14f4ebd98b9d2b451db477b98dc688b5c546c",
+      "language": "Jupyter Notebook"
+    },
+    {
+      "sha": "1bd5b9d0c45705763c78f00dae847acf0083a8b6",
+      "repository": "dsc106-project3",
+      "date": "2026-11-02T18:02:39Z",
+      "message": "Merge branch 'main' of https://github.com/vmarroquinguzman/project3",
+      "url": "https://github.com/vmarroquinguzman/dsc106-project3/commit/1bd5b9d0c45705763c78f00dae847acf0083a8b6",
+      "language": "Jupyter Notebook"
+    },
+    {
+      "sha": "1f36f9175a9408934face140befa017cc6d974b5",
+      "repository": "dsc106-project3",
+      "date": "2026-11-02T18:06:00Z",
+      "message": "Created the website",
+      "url": "https://github.com/vmarroquinguzman/dsc106-project3/commit/1f36f9175a9408934face140befa017cc6d974b5",
+      "language": "Jupyter Notebook"
+    },
+    {
+      "sha": "ac8f99357c80139bcbce04fa6801da085e23d104",
+      "repository": "portfolio",
+      "date": "2026-11-04T05:54:24Z",
+      "message": "Added meta",
+      "url": "https://github.com/vmarroquinguzman/portfolio/commit/ac8f99357c80139bcbce04fa6801da085e23d104",
+      "language": "JavaScript"
+    },
+    {
+      "sha": "df5049a857b070a05a1ae127dbedffcbca97edec",
+      "repository": "portfolio",
+      "date": "2026-11-04T18:44:29Z",
+      "message": "Added a plot",
+      "url": "https://github.com/vmarroquinguzman/portfolio/commit/df5049a857b070a05a1ae127dbedffcbca97edec",
+      "language": "JavaScript"
+    },
+    {
+      "sha": "e4a404fe3e94227467189a7df2e9f4c111583f1d",
+      "repository": "portfolio",
+      "date": "2026-11-04T22:48:36Z",
+      "message": "Added more to the commit graph",
+      "url": "https://github.com/vmarroquinguzman/portfolio/commit/e4a404fe3e94227467189a7df2e9f4c111583f1d",
+      "language": "JavaScript"
+    },
+    {
+      "sha": "205e05b9aed6e4960ec8088c6ac4b9ee27d0641a",
+      "repository": "portfolio",
+      "date": "2026-11-05T19:52:08Z",
+      "message": "Revised my summary table in meta",
+      "url": "https://github.com/vmarroquinguzman/portfolio/commit/205e05b9aed6e4960ec8088c6ac4b9ee27d0641a",
+      "language": "JavaScript"
+    },
+    {
+      "sha": "6784351f0c438f7864981d671722b84281f254a6",
+      "repository": "portfolio",
+      "date": "2026-11-07T06:03:11Z",
+      "message": "Adding language breakdown to meta.",
+      "url": "https://github.com/vmarroquinguzman/portfolio/commit/6784351f0c438f7864981d671722b84281f254a6",
+      "language": "JavaScript"
+    },
+    {
+      "sha": "c11d31c2fd39df9e2ac60c7399cfc9407bb9ecee",
+      "repository": "Cafe-Lindo-Website-",
+      "date": "2026-11-08T03:36:56Z",
+      "message": "Made a website for a coffee company.",
+      "url": "https://github.com/vmarroquinguzman/Cafe-Lindo-Website-/commit/c11d31c2fd39df9e2ac60c7399cfc9407bb9ecee",
+      "language": "CSS"
+    },
+    {
+      "sha": "5087484c9e0266b5ae9abacf48e27ff307a14fdb",
+      "repository": "Cafe-Lindo-Website-",
+      "date": "2026-11-08T04:16:36Z",
+      "message": "new logo change.",
+      "url": "https://github.com/vmarroquinguzman/Cafe-Lindo-Website-/commit/5087484c9e0266b5ae9abacf48e27ff307a14fdb",
+      "language": "CSS"
+    },
+    {
+      "sha": "ffaab634d6f06438ec24c05e5f0079bbb773db42",
+      "repository": "Cafe-Lindo-Website-",
+      "date": "2026-11-08T04:18:51Z",
+      "message": "Changed the logo back.",
+      "url": "https://github.com/vmarroquinguzman/Cafe-Lindo-Website-/commit/ffaab634d6f06438ec24c05e5f0079bbb773db42",
+      "language": "CSS"
+    },
+    {
+      "sha": "890b4c15a4e0c814ab5ca3dff0ea7e3607cf62a6",
+      "repository": "Cafe-Lindo-Website-",
+      "date": "2026-11-08T04:45:09Z",
+      "message": "Added our mission.",
+      "url": "https://github.com/vmarroquinguzman/Cafe-Lindo-Website-/commit/890b4c15a4e0c814ab5ca3dff0ea7e3607cf62a6",
+      "language": "CSS"
+    },
+    {
+      "sha": "51bbde66eaf1798d3cc40487b52b4d6d576e2bc7",
+      "repository": "Cafe-Lindo-Website-",
+      "date": "2026-11-08T05:32:47Z",
+      "message": "Added coffee and fincas.",
+      "url": "https://github.com/vmarroquinguzman/Cafe-Lindo-Website-/commit/51bbde66eaf1798d3cc40487b52b4d6d576e2bc7",
+      "language": "CSS"
+    },
+    {
+      "sha": "380be3abb92a293c2e48b42f0709508bb2d5ef5b",
+      "repository": "Cafe-Lindo-Website-",
+      "date": "2026-11-08T05:38:47Z",
+      "message": "Added acres",
+      "url": "https://github.com/vmarroquinguzman/Cafe-Lindo-Website-/commit/380be3abb92a293c2e48b42f0709508bb2d5ef5b",
+      "language": "CSS"
+    },
+    {
+      "sha": "85be54acdf34cd3d0ab2e1f1d53e137893f572f1",
+      "repository": "Cafe-Lindo-Website-",
+      "date": "2026-11-08T05:46:47Z",
+      "message": "Remove coffee varieties.",
+      "url": "https://github.com/vmarroquinguzman/Cafe-Lindo-Website-/commit/85be54acdf34cd3d0ab2e1f1d53e137893f572f1",
+      "language": "CSS"
+    },
+    {
+      "sha": "7b8d93196e6ae2e05dbf153de33a7126f4ec4a15",
+      "repository": "portfolio",
+      "date": "2026-11-12T03:41:59Z",
+      "message": "Update style.css",
+      "url": "https://github.com/vmarroquinguzman/portfolio/commit/7b8d93196e6ae2e05dbf153de33a7126f4ec4a15",
+      "language": "JavaScript"
+    },
+    {
+      "sha": "505807a27c1e02455f49c9dc2e42dc8e40353de7",
+      "repository": "dsc106-project3",
+      "date": "2026-11-12T17:01:55Z",
+      "message": "Filtered out data outside of California",
+      "url": "https://github.com/vmarroquinguzman/dsc106-project3/commit/505807a27c1e02455f49c9dc2e42dc8e40353de7",
+      "language": "Jupyter Notebook"
+    },
+    {
+      "sha": "20cc8eca601cb761b6943d0cd3f228079f521d90",
+      "repository": "dsc106-project3",
+      "date": "2026-11-12T17:02:01Z",
+      "message": "Merge branch 'main' of https://github.com/vmarroquinguzman/dsc106-project3",
+      "url": "https://github.com/vmarroquinguzman/dsc106-project3/commit/20cc8eca601cb761b6943d0cd3f228079f521d90",
+      "language": "Jupyter Notebook"
+    },
+    {
+      "sha": "999da08fdaba3da77326443e54b1415b7e5840c0",
+      "repository": "dsc106-project3",
+      "date": "2026-11-12T18:02:04Z",
+      "message": "Filter out data outside of California",
+      "url": "https://github.com/vmarroquinguzman/dsc106-project3/commit/999da08fdaba3da77326443e54b1415b7e5840c0",
+      "language": "Jupyter Notebook"
+    },
+    {
+      "sha": "d7afe8a6336a35d6114954758c5d1ef060fbcb47",
+      "repository": "bikewatching",
+      "date": "2026-11-12T19:21:25Z",
+      "message": "Initial commit",
+      "url": "https://github.com/vmarroquinguzman/bikewatching/commit/d7afe8a6336a35d6114954758c5d1ef060fbcb47",
+      "language": "JavaScript"
+    },
+    {
+      "sha": "a737eb6b7493eb64f9c5112719dfa5bdfe95e6ea",
+      "repository": "bikewatching",
+      "date": "2026-11-12T19:36:11Z",
+      "message": "Created index.html and added code for website",
+      "url": "https://github.com/vmarroquinguzman/bikewatching/commit/a737eb6b7493eb64f9c5112719dfa5bdfe95e6ea",
+      "language": "JavaScript"
+    },
+    {
+      "sha": "292ddacebcea42418f709aa22bb8a6087dc4a060",
+      "repository": "bikewatching",
+      "date": "2026-11-12T19:43:04Z",
+      "message": "Added an global.css and favicon.svg",
+      "url": "https://github.com/vmarroquinguzman/bikewatching/commit/292ddacebcea42418f709aa22bb8a6087dc4a060",
+      "language": "JavaScript"
+    },
+    {
+      "sha": "5b25f11c9312f22271cd7de0e3446723cda45f9f",
+      "repository": "bikewatching",
+      "date": "2026-11-12T19:50:56Z",
+      "message": "Added map.js",
+      "url": "https://github.com/vmarroquinguzman/bikewatching/commit/5b25f11c9312f22271cd7de0e3446723cda45f9f",
+      "language": "JavaScript"
+    },
+    {
+      "sha": "0b84af1cc3c417c0451584d4b6d32138abfcd8d4",
+      "repository": "bikewatching",
+      "date": "2026-11-12T19:55:50Z",
+      "message": "Added a map.css file",
+      "url": "https://github.com/vmarroquinguzman/bikewatching/commit/0b84af1cc3c417c0451584d4b6d32138abfcd8d4",
+      "language": "JavaScript"
+    },
+    {
+      "sha": "7e87d11bc85fabc6cad49fdb64496a71f16b6875",
+      "repository": "bikewatching",
+      "date": "2026-11-12T20:14:18Z",
+      "message": "Added Boston map to map.js",
+      "url": "https://github.com/vmarroquinguzman/bikewatching/commit/7e87d11bc85fabc6cad49fdb64496a71f16b6875",
+      "language": "JavaScript"
+    },
+    {
+      "sha": "ce3fac156bd8e708864cbf94eec1d70181d3d836",
+      "repository": "bikewatching",
+      "date": "2026-11-12T20:19:06Z",
+      "message": "updated map.js",
+      "url": "https://github.com/vmarroquinguzman/bikewatching/commit/ce3fac156bd8e708864cbf94eec1d70181d3d836",
+      "language": "JavaScript"
+    },
+    {
+      "sha": "55943d3f62a21e7da323eef41372c95953b8c1c8",
+      "repository": "bikewatching",
+      "date": "2026-11-12T23:16:39Z",
+      "message": "deleted some code",
+      "url": "https://github.com/vmarroquinguzman/bikewatching/commit/55943d3f62a21e7da323eef41372c95953b8c1c8",
+      "language": "JavaScript"
+    },
+    {
+      "sha": "c3424b377d4bad364c6eb083102dc6ba50b0a517",
+      "repository": "bikewatching",
+      "date": "2026-11-12T23:19:20Z",
+      "message": "linked map.css to index.html",
+      "url": "https://github.com/vmarroquinguzman/bikewatching/commit/c3424b377d4bad364c6eb083102dc6ba50b0a517",
+      "language": "JavaScript"
+    },
+    {
+      "sha": "8a61cbc218c39171fc4d0e960f18cb2068092789",
+      "repository": "bikewatching",
+      "date": "2026-11-12T23:39:58Z",
+      "message": "Added data to website",
+      "url": "https://github.com/vmarroquinguzman/bikewatching/commit/8a61cbc218c39171fc4d0e960f18cb2068092789",
+      "language": "JavaScript"
+    },
+    {
+      "sha": "16b6dae55cc9d19a964def725ee9da9b412c7efe",
+      "repository": "bikewatching",
+      "date": "2026-11-13T00:38:38Z",
+      "message": "Added to map.css, map.js and index.html",
+      "url": "https://github.com/vmarroquinguzman/bikewatching/commit/16b6dae55cc9d19a964def725ee9da9b412c7efe",
+      "language": "JavaScript"
+    },
+    {
+      "sha": "2d834a6056bbc3afeee1f90e61e5206b6a62eee5",
+      "repository": "bikewatching",
+      "date": "2026-11-13T22:47:22Z",
+      "message": "Finished Step 4",
+      "url": "https://github.com/vmarroquinguzman/bikewatching/commit/2d834a6056bbc3afeee1f90e61e5206b6a62eee5",
+      "language": "JavaScript"
+    },
+    {
+      "sha": "f22434eca556ef534c14fcb7b658b8b90939d667",
+      "repository": "bikewatching",
+      "date": "2026-11-14T00:42:16Z",
+      "message": "Adding a tooltip with exact traffic numbers.",
+      "url": "https://github.com/vmarroquinguzman/bikewatching/commit/f22434eca556ef534c14fcb7b658b8b90939d667",
+      "language": "JavaScript"
+    },
+    {
+      "sha": "6c0c90c56b3c28f445912fd8c861ca804b979cf8",
+      "repository": "bikewatching",
+      "date": "2026-11-14T01:22:13Z",
+      "message": "Performance optimizations and filtering data",
+      "url": "https://github.com/vmarroquinguzman/bikewatching/commit/6c0c90c56b3c28f445912fd8c861ca804b979cf8",
+      "language": "JavaScript"
+    },
+    {
+      "sha": "1bbce5a0b039668e60e83263699e48dcb68b156e",
+      "repository": "bikewatching",
+      "date": "2026-11-14T01:31:51Z",
+      "message": "Added color based on arrival and departure.",
+      "url": "https://github.com/vmarroquinguzman/bikewatching/commit/1bbce5a0b039668e60e83263699e48dcb68b156e",
+      "language": "JavaScript"
+    },
+    {
+      "sha": "51888cf0ae933a859eb461e9f3df1b7bc84efd69",
+      "repository": "bikewatching",
+      "date": "2026-11-14T01:39:32Z",
+      "message": "Changed size of map",
+      "url": "https://github.com/vmarroquinguzman/bikewatching/commit/51888cf0ae933a859eb461e9f3df1b7bc84efd69",
+      "language": "JavaScript"
+    },
+    {
+      "sha": "dff02ad9dbe9ffd1c1f5eea5c26995a773af5658",
+      "repository": "portfolio",
+      "date": "2026-11-14T23:38:16Z",
+      "message": "Added my projects",
+      "url": "https://github.com/vmarroquinguzman/portfolio/commit/dff02ad9dbe9ffd1c1f5eea5c26995a773af5658",
+      "language": "JavaScript"
+    },
+    {
+      "sha": "17d78f735e218465a1023a91b035141930142626",
+      "repository": "portfolio",
+      "date": "2026-11-14T23:43:36Z",
+      "message": "Added favicon",
+      "url": "https://github.com/vmarroquinguzman/portfolio/commit/17d78f735e218465a1023a91b035141930142626",
+      "language": "JavaScript"
+    },
+    {
+      "sha": "7a436ffab0b6c82d5b78171b83654c12cd56bf71",
+      "repository": "dsc106-project3",
+      "date": "2026-11-14T23:43:50Z",
+      "message": "Added Favicon.",
+      "url": "https://github.com/vmarroquinguzman/dsc106-project3/commit/7a436ffab0b6c82d5b78171b83654c12cd56bf71",
+      "language": "Jupyter Notebook"
+    },
+    {
+      "sha": "9d7721689b2818687b5115f0d98e8b9983343216",
+      "repository": "dsc106-project3",
+      "date": "2026-11-14T23:43:53Z",
+      "message": "Merge branch 'main' of https://github.com/vmarroquinguzman/dsc106-project3",
+      "url": "https://github.com/vmarroquinguzman/dsc106-project3/commit/9d7721689b2818687b5115f0d98e8b9983343216",
+      "language": "Jupyter Notebook"
+    },
+    {
+      "sha": "c50f75483bb92f19b9138841003f561d0dd977c4",
+      "repository": "dsc106-project3",
+      "date": "2026-11-14T23:55:44Z",
+      "message": "Added favicon",
+      "url": "https://github.com/vmarroquinguzman/dsc106-project3/commit/c50f75483bb92f19b9138841003f561d0dd977c4",
+      "language": "Jupyter Notebook"
+    },
+    {
+      "sha": "2d4de65630b294782a1995e7a99c4f770d687cf2",
+      "repository": "dsc106-finalproject",
+      "date": "2026-11-17T00:37:56Z",
+      "message": "Initial commit",
+      "url": "https://github.com/vmarroquinguzman/dsc106-finalproject/commit/2d4de65630b294782a1995e7a99c4f770d687cf2",
+      "language": "Jupyter Notebook"
+    },
+    {
+      "sha": "f20c19b0c6a58ef09629336a1903b9a847fa12c2",
+      "repository": "dsc106-finalproject",
+      "date": "2026-11-17T00:46:00Z",
+      "message": "Created outline.",
+      "url": "https://github.com/vmarroquinguzman/dsc106-finalproject/commit/f20c19b0c6a58ef09629336a1903b9a847fa12c2",
+      "language": "Jupyter Notebook"
+    },
+    {
+      "sha": "f6b455308fd92c73c4a44fde5c35e8c801b382f1",
+      "repository": "dsc106-finalproject",
+      "date": "2026-11-17T01:01:38Z",
+      "message": "Added the map.",
+      "url": "https://github.com/vmarroquinguzman/dsc106-finalproject/commit/f6b455308fd92c73c4a44fde5c35e8c801b382f1",
+      "language": "Jupyter Notebook"
+    },
+    {
+      "sha": "43b8b8ed718d9cf2f9ef48830f8b6bf49fcb6026",
+      "repository": "dsc106-finalproject",
+      "date": "2026-11-17T03:24:19Z",
+      "message": "Cleaned Data.",
+      "url": "https://github.com/vmarroquinguzman/dsc106-finalproject/commit/43b8b8ed718d9cf2f9ef48830f8b6bf49fcb6026",
+      "language": "Jupyter Notebook"
+    },
+    {
+      "sha": "db4c531fce4dc019dab8fb2cd3388ec162c92755",
+      "repository": "dsc106-finalproject",
+      "date": "2026-11-17T04:06:53Z",
+      "message": "Added more data and update vis",
+      "url": "https://github.com/vmarroquinguzman/dsc106-finalproject/commit/db4c531fce4dc019dab8fb2cd3388ec162c92755",
+      "language": "Jupyter Notebook"
+    },
+    {
+      "sha": "1c74437010ee243b660dcbd4db99f0188bcfede0",
+      "repository": "dsc106-finalproject",
+      "date": "2026-11-17T04:10:40Z",
+      "message": "Different Mapbox style.",
+      "url": "https://github.com/vmarroquinguzman/dsc106-finalproject/commit/1c74437010ee243b660dcbd4db99f0188bcfede0",
+      "language": "Jupyter Notebook"
+    },
+    {
+      "sha": "3d7526e6bdcdb7b9609ae32f26e522b0e4e14718",
+      "repository": "dsc106-finalproject",
+      "date": "2026-11-17T17:49:12Z",
+      "message": "Add emission scenario and month.",
+      "url": "https://github.com/vmarroquinguzman/dsc106-finalproject/commit/3d7526e6bdcdb7b9609ae32f26e522b0e4e14718",
+      "language": "Jupyter Notebook"
+    },
+    {
+      "sha": "737076cfbcbaebf8e77148b9792099f3b22793f3",
+      "repository": "dsc106-finalproject",
+      "date": "2026-11-17T18:22:03Z",
+      "message": "Added year slider.",
+      "url": "https://github.com/vmarroquinguzman/dsc106-finalproject/commit/737076cfbcbaebf8e77148b9792099f3b22793f3",
+      "language": "Jupyter Notebook"
+    },
+    {
+      "sha": "21443977e0d16d84d337ad226c88372b53e18a5d",
+      "repository": "dsc106-finalproject",
+      "date": "2026-11-17T18:37:27Z",
+      "message": "Added zip codes",
+      "url": "https://github.com/vmarroquinguzman/dsc106-finalproject/commit/21443977e0d16d84d337ad226c88372b53e18a5d",
+      "language": "Jupyter Notebook"
+    },
+    {
+      "sha": "f36936fd8295adb585e0278e0d3472c8d2d9d17b",
+      "repository": "dsc106-finalproject",
+      "date": "2026-11-17T18:38:51Z",
+      "message": "removed extra data",
+      "url": "https://github.com/vmarroquinguzman/dsc106-finalproject/commit/f36936fd8295adb585e0278e0d3472c8d2d9d17b",
+      "language": "Jupyter Notebook"
+    },
+    {
+      "sha": "1d097276fe622a2f26a6c0d7de8012308c935782",
+      "repository": "dsc106-finalproject",
+      "date": "2026-11-17T18:48:34Z",
+      "message": "Added tooltip",
+      "url": "https://github.com/vmarroquinguzman/dsc106-finalproject/commit/1d097276fe622a2f26a6c0d7de8012308c935782",
+      "language": "Jupyter Notebook"
+    },
+    {
+      "sha": "7ed6d8c8ae1c15e7f4b584d3cd3ba96a8b761370",
+      "repository": "dsc106-finalproject",
+      "date": "2026-11-17T18:51:12Z",
+      "message": "changed Mapbox style.",
+      "url": "https://github.com/vmarroquinguzman/dsc106-finalproject/commit/7ed6d8c8ae1c15e7f4b584d3cd3ba96a8b761370",
+      "language": "Jupyter Notebook"
+    },
+    {
+      "sha": "83c3cf95bffa4e07886765e0f1bb9986ad1ef70e",
+      "repository": "portfolio",
+      "date": "2026-11-20T01:14:27Z",
+      "message": "Added more visuals.",
+      "url": "https://github.com/vmarroquinguzman/portfolio/commit/83c3cf95bffa4e07886765e0f1bb9986ad1ef70e",
+      "language": "JavaScript"
+    },
+    {
+      "sha": "d2677ae386b82e963eacbfe7cc9ca2da015e48ab",
+      "repository": "portfolio",
+      "date": "2026-11-20T01:27:12Z",
+      "message": "Step 3",
+      "url": "https://github.com/vmarroquinguzman/portfolio/commit/d2677ae386b82e963eacbfe7cc9ca2da015e48ab",
+      "language": "JavaScript"
+    },
+    {
+      "sha": "0319b68690ac70f254d8717b1c0725c52cae1e09",
+      "repository": "portfolio",
+      "date": "2026-11-20T02:32:30Z",
+      "message": "Made scrollama better.",
+      "url": "https://github.com/vmarroquinguzman/portfolio/commit/0319b68690ac70f254d8717b1c0725c52cae1e09",
+      "language": "JavaScript"
+    },
+    {
+      "sha": "44fb9ad6c8fef9ccc14dc6e63d816e3fea189792",
+      "repository": "portfolio",
+      "date": "2026-11-20T02:39:16Z",
+      "message": "Added heat map",
+      "url": "https://github.com/vmarroquinguzman/portfolio/commit/44fb9ad6c8fef9ccc14dc6e63d816e3fea189792",
+      "language": "JavaScript"
+    },
+    {
+      "sha": "f63967f16d77b96bd65fece2bc1477f040aa4f18",
+      "repository": "portfolio",
+      "date": "2026-11-20T02:44:38Z",
+      "message": "Removed Slider",
+      "url": "https://github.com/vmarroquinguzman/portfolio/commit/f63967f16d77b96bd65fece2bc1477f040aa4f18",
+      "language": "JavaScript"
+    },
+    {
+      "sha": "986d621e6a23f6bd83a3874ab930cb9a8a371592",
+      "repository": "portfolio",
+      "date": "2026-11-20T02:49:53Z",
+      "message": "Automate meta page updates",
+      "url": "https://github.com/vmarroquinguzman/portfolio/commit/986d621e6a23f6bd83a3874ab930cb9a8a371592",
+      "language": "JavaScript"
+    }
+  ],
+  "skippedRepositories": []
+}

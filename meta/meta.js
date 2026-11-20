@@ -589,29 +589,19 @@ d3.select('#scatter-story')
 // ==========================================
 
 function onStepEnter(response) {
-  // Highlight the active narrative
   d3.selectAll('#scatter-story .step')
     .classed('is-active', false);
 
   d3.select(response.element)
     .classed('is-active', true);
 
-  // Get the current commit
   const commit = response.element.__data__;
 
-  // Filter commits by the current scroll position
   filteredCommits = commits.filter(
     (d) => d.datetime <= commit.datetime
   );
 
-  // Update the scatter plot
   updateScatterPlot(data, filteredCommits);
-
-  // Update summary statistics
-  renderCommitInfo(
-    filteredCommits.flatMap((d) => d.lines),
-    filteredCommits
-  );
 }
 
 const scroller = scrollama();

@@ -5,6 +5,9 @@ on:
   push:
     branches: [main]
 
+  schedule:
+    - cron: '0 12 * * *'
+
   workflow_dispatch:
 
 permissions:
@@ -40,6 +43,11 @@ jobs:
 
       - name: Generate updated Meta data
         run: npx elocuent -d . -o meta/loc.csv --spaces 2
+      
+      - name: Generate GitHub activity data
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node scripts/github-activity.mjs
 
       - name: Remove development dependencies
         run: rm -rf node_modules

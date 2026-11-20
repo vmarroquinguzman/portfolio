@@ -29,7 +29,60 @@
     </main>
     <h2>Latest Projects</h2>
     <div class="projects"></div>
-    <h2>My GitHub Stats</h2>
-    <div id="profile-stats"></div>
+    <section id="github-overview">
+        <h2>GitHub Overview</h2>
+
+        <p class="github-description">
+            Explore my development activity across my GitHub
+            repositories, including my projects, contributions,
+            and coding habits.
+        </p>
+
+        <div id="profile-stats"></div>
+
+        <div class="github-filters">
+
+            <label>
+            Time period
+            <select id="github-period">
+                <option value="7">Last 7 days</option>
+                <option value="30" selected>Last 30 days</option>
+                <option value="90">Last 90 days</option>
+                <option value="365">Last year</option>
+            </select>
+            </label>
+
+            <label>
+            Repository
+            <select id="github-repository">
+                <option value="all">All repositories</option>
+            </select>
+            </label>
+
+        </div>
+
+        <p id="github-data-status">Loading GitHub activity...</p>
+
+        <div id="github-activity-stats"></div>
+
+        <h3>Activity by Repository</h3>
+        <div id="repository-chart"></div>
+
+        <h3>My Coding Habits</h3>
+
+        <p class="github-description">
+            Total commits grouped by weekday and hour
+            during the selected time period.
+            All times are shown in Pacific Time.
+        </p>
+
+        <div id="github-heatmap"></div>
+        <div id="github-heatmap-legend"></div>
+
+        <p id="github-heatmap-info">
+            Hover over a cell to explore my activity.
+        </p>
+
+        </section>
 </body>
 </html>
