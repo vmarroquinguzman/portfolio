@@ -871,3 +871,104 @@ dl.info dd {
 #scrolly-1 .step.is-active {
   opacity: 1;
 }
+/* =========================================
+   LAB 8 - STEP 4: FILE SCROLLYTELLING
+========================================= */
+
+.meta-section {
+  margin-block: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgb(128 128 128 / 25%);
+}
+
+#scrolly-2 {
+  display: grid;
+  grid-template-columns: minmax(0, 7fr) minmax(0, 3fr);
+  gap: 1.5rem;
+  align-items: start;
+  position: relative;
+  margin-block: 2rem;
+}
+
+#file-plot {
+  position: sticky;
+  top: 1rem;
+  align-self: start;
+  min-width: 0;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+#file-story {
+  min-width: 0;
+}
+
+#file-story .step {
+  padding-bottom: 60vh;
+  line-height: 1.5;
+  opacity: 0.5;
+  overflow-wrap: anywhere;
+  transition: opacity 300ms;
+}
+
+#file-story .step.is-active {
+  opacity: 1;
+}
+
+#file-story a {
+  color: var(--color-accent);
+}
+
+#scrolly-2 #files {
+  grid-template-columns: minmax(0, 2fr) minmax(0, 3fr);
+  row-gap: 0.75rem;
+}
+
+#scrolly-2 #files code {
+  overflow-wrap: anywhere;
+}
+/* =========================================
+   CODING ACTIVITY HEATMAP
+========================================= */
+
+#activity-heatmap {
+  width: 100%;
+  margin-block: 1.5rem;
+}
+
+#activity-heatmap rect {
+  transition: stroke 150ms, opacity 150ms;
+}
+
+#activity-heatmap text {
+  font-size: 12px;
+  font-family: inherit;
+}
+
+#heatmap-legend {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  font-size: 0.8rem;
+  color: #888;
+}
+
+.heatmap-swatch {
+  width: 15px;
+  height: 15px;
+  border-radius: 3px;
+}
+
+#heatmap-info {
+  padding: 1rem;
+  border-left: 3px solid var(--color-accent);
+  background: color-mix(
+    in oklch,
+    var(--color-accent),
+    canvas 92%
+  );
+  border-radius: 0.25rem;
+  font-size: 0.9rem;
+}

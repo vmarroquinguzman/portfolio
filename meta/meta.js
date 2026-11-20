@@ -690,3 +690,237 @@ scroller
 window.addEventListener('resize', () => {
   scroller.resize();
 });
+// ==========================================
+// LAB 8 - STEP 4: File scrollytelling
+// ==========================================
+
+d3.select('#file-story')
+  .selectAll('.step')
+  .data(commits)
+  .join('div')
+  .attr('class', 'step')
+  .html((d, i) => {
+    const files = d3.group(d.lines, (line) => line.file);
+
+    const largestFile = d3.greatest(
+      files,
+      ([name, lines]) => lines.length
+    );
+
+    return `
+      <h3>Commit ${i + 1}</h3>
+
+      <p>
+        ${d.datetime.toLocaleDateString('en-US', {
+          dateStyle: 'long'
+        })}
+      </p>
+
+      <p>
+        This commit accounts for
+        <strong>${d.totalLines} lines</strong>
+        across <strong>${files.size} files</strong>
+        in the current codebase.
+      </p>
+
+      <p>
+        The file with the most lines attributed
+        to this commit was
+        <code>${largestFile[0]}</code>.
+      </p>
+
+      <a href="${d.url}" target="_blank"
+         rel="noopener noreferrer">
+        View commit on GitHub
+      </a>
+    `;
+  });
+
+function onFileStepEnter(response) {
+  d3.selectAll('#file-story .step')
+    .classed('is-active', false);
+
+  d3.select(response.element)
+    .classed('is-active', true);
+
+  const commit = response.element.__data__;
+
+  const visibleCommits = commits.filter(
+    (d) => d.datetime <= commit.datetime
+  );
+
+  updateFileDisplay(visibleCommits);
+}
+
+const fileScroller = scrollama();
+
+fileScroller
+  .setup({
+    container: '#scrolly-2',
+    step: '#file-story .step',
+    offset: 0.5
+  })
+  .onStepEnter(onFileStepEnter);
+
+window.addEventListener('resize', () => {
+  fileScroller.resize();
+});
+
+// ==========================================
+// EXTRA: CODING ACTIVITY HEATMAP
+// ==========================================
+
+function renderActivityHeatmap(commits) {
+  const days = [
+    'Monday',
+    'Tuesday',
+    'Wednesday',
+    'Thursday',
+    'Friday',
+    'Saturday',
+    'Sunday'
+  ];
+
+  const hours = d3.range(24);
+
+  // Count commits by weekday and hour
+  const activity = d3.rollup(
+    commits,
+    (v) => v.length,
+    (d) => (d.datetime.getDay() + 6) % 7,
+    (d) => d.datetime.getHours()
+  );
+
+  // Include every possible day and hour
+  const heatmapData = days.flatMap((day, dayIndex) =>
+    hours.map((hour) => ({
+      day,
+      dayIndex,
+      hour,
+      count: activity.get(dayIndex)?.get(hour) || 0
+    }))
+  );
+
+  const width = 800;
+  const height = 300;
+
+  const margin = {
+    top: 15,
+    right: 10,
+    bottom: 40,
+    left: 85
+  };
+
+  const container = d3.select('#activity-heatmap');
+
+  container.selectAll('*').remove();
+
+  const svg = container
+    .append('svg')
+    .attr('viewBox', `0 0 ${width} ${height}`)
+    .style('width', '100%');
+
+  // Horizontal scale: hour of the day
+  const x = d3.scaleBand()
+    .domain(hours)
+    .range([margin.left, width - margin.right])
+    .padding(0.12);
+
+  // Vertical scale: day of the week
+  const y = d3.scaleBand()
+    .domain(days)
+    .range([margin.top, height - margin.bottom])
+    .padding(0.12);
+
+  const maxCount = d3.max(
+    heatmapData,
+    (d) => d.count
+  ) || 1;
+
+  const color = d3.scaleSequential()
+    .domain([0, maxCount])
+    .interpolator(d3.interpolateBlues);
+
+  // Draw heatmap cells
+  svg.selectAll('rect')
+    .data(heatmapData)
+    .join('rect')
+    .attr('x', (d) => x(d.hour))
+    .attr('y', (d) => y(d.day))
+    .attr('width', x.bandwidth())
+    .attr('height', y.bandwidth())
+    .attr('rx', 3)
+    .attr('fill', (d) =>
+      d.count === 0
+        ? 'rgba(128, 128, 128, 0.12)'
+        : color(d.count)
+    )
+    .style('cursor', 'pointer')
+
+    .on('mouseenter', function(event, d) {
+      d3.select(this)
+        .attr('stroke', 'currentColor')
+        .attr('stroke-width', 2);
+
+      const hour = String(d.hour).padStart(2, '0');
+
+      d3.select('#heatmap-info')
+        .text(
+          `${d.day} at ${hour}:00 — ${d.count} ${
+            d.count === 1 ? 'commit' : 'commits'
+          }`
+        );
+    })
+
+    .on('mouseleave', function() {
+      d3.select(this)
+        .attr('stroke', 'none');
+
+      d3.select('#heatmap-info')
+        .text('Hover over a cell to explore my activity.');
+    });
+
+  // X-axis
+  svg.append('g')
+    .attr(
+      'transform',
+      `translate(0, ${height - margin.bottom})`
+    )
+    .call(
+      d3.axisBottom(x)
+        .tickValues([0, 4, 8, 12, 16, 20, 23])
+        .tickFormat(
+          (h) => `${String(h).padStart(2, '0')}:00`
+        )
+        .tickSize(0)
+    )
+    .call((g) => g.select('.domain').remove());
+
+  // Y-axis
+  svg.append('g')
+    .attr('transform', `translate(${margin.left}, 0)`)
+    .call(d3.axisLeft(y).tickSize(0))
+    .call((g) => g.select('.domain').remove());
+
+  // Color legend
+  const legend = d3.select('#heatmap-legend');
+
+  legend.selectAll('*').remove();
+
+  legend.append('span').text('Less active');
+
+  legend.selectAll('.heatmap-swatch')
+    .data(d3.range(6))
+    .join('span')
+    .attr('class', 'heatmap-swatch')
+    .style('background', (d) =>
+      d === 0
+        ? 'rgba(128, 128, 128, 0.12)'
+        : color((d / 5) * maxCount)
+    );
+
+  legend.append('span').text('More active');
+}
+
+// Use all recorded commits for the heatmap
+renderActivityHeatmap(commits);
